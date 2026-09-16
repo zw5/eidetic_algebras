@@ -1,6 +1,6 @@
 # Eidetic power-map algebras
 
-This repo contains a paper I have developed with the assistance of LLMs. It describes "eidetic" algebras of finite groups, given a group G, the eidetic algebra is created by taking the rational class functions with the inner product weighted by class sizes, and the power maps $\Psi_p f(C) = f(C^p)$ for the primes $p$ dividing the exponent.
+This repo contains a paper I developed with the assistance of GPT 5.5. It describes Eidetic algebras of finite groups, which are: given a finite group G, the eidetic algebra is created by taking the rational class functions with the inner product weighted by class sizes, and the power maps $\Psi_p f(C) = f(C^p)$ for the primes $p$ dividing the exponent.
 
 In this paper we prove the algebra is semisimple and has its own bicommutant. Its commutant is the space of balanced kernels on the weighted power graph, so the algebra is only identical to the full matrix algebra IFF the balanced kernels are scalars. 
 
