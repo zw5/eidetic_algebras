@@ -1,0 +1,99 @@
+\section{Power dynamics and the sporadic separation theorem}
+\label{sec:power-dynamics}
+
+The forward operators retain a finite dynamical invariant that is different
+from the adjoint-closed algebra.  Let \(\tau:X\to X\) be a map of a finite
+set and let \(P_\tau\) act on \(\Q^X\) by pullback,
+\((P_\tau f)(x)=f(\tau x)\).  Write \(c_\ell(\tau)\) for the number of
+directed cycles of length \(\ell\) in the functional graph of \(\tau\).
+
+\begin{theorem}[Finite-map zeta formula]
+\label{thm:finite-map-zeta}
+For every finite map \(\tau:X\to X\),
+\begin{equation}
+ Z_\tau(z):=\det(I-zP_\tau)^{-1}
+ =\prod_{\ell\geq1}(1-z^\ell)^{-c_\ell(\tau)}.
+ \label{eq:finite-map-zeta}
+\end{equation}
+Thus \(Z_\tau\) depends only on the periodic cycles.  The rooted trees
+feeding those cycles contribute no factor.
+\end{theorem}
+
+\begin{proof}
+Order the vertices of each connected functional-graph component by
+decreasing distance from its unique directed cycle, followed by the cycle
+vertices.  In this basis \(P_\tau\) is block triangular.  Its off-cycle
+diagonal block is nilpotent, while a cycle of length \(\ell\) contributes
+the permutation matrix of an \(\ell\)-cycle.  Hence
+\[
+ \det(I-zP_\tau)
+ =\prod_{\text{cycles }C}\det(I-zP_C)
+ =\prod_{\text{cycles }C}(1-z^{|C|}).
+\]
+\end{proof}
+
+For a finite group \(G\), put \(N_G=\exp(G)\) and
+\[
+ \mathcal N_G=\{p^a:p\text{ prime},\ a\geq1,\ p^a\mid N_G\}.
+\]
+Let \(\sigma_n:\Conj(G)\to\Conj(G)\) be \(C\mapsto C^n\).  The
+\emph{ramified dynamical packet} is the unlabelled multiset
+\begin{equation}
+ \mathfrak Z_{\rm ram}(G)
+ =\bigl\{\!\bigl\{Z_{\sigma_n}(z):n\in\mathcal N_G\bigr\}\!\bigr\}.
+ \label{eq:ramified-dynamical-packet}
+\end{equation}
+It forgets both the prime-power labels and the ordering of the conjugacy
+classes.  It is therefore weaker than the fully marked eidetic object.
+
+\begin{theorem}[Sporadic dynamical separation]
+\label{thm:sporadic-dynamical-separation}
+For the twenty-six sporadic simple groups:
+\begin{enumerate}
+\item the map \(G\mapsto\mathfrak Z_{\rm ram}(G)\) is injective;
+\item the cycle lengths occurring among all
+      \(\sigma_n\), \(n\in\mathcal N_G\), lie in
+      \(\{1,2,3,5\}\);
+\item for each \(G\), the set of occurring cycle lengths equals
+      \(\{1\}\) together with the orders of the good-label characters in
+      \cref{thm:good-label-census};
+\item a cycle of length \(3\) occurs exactly for
+      \[
+      J_1,\ J_3,\ J_4,\ Ly,\ O'N,\ Ru,
+      \]
+      and a cycle of length \(5\) occurs exactly for \(Ly\).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The class power maps in the fixed CTblLib ordering give \(258\)
+prime-power directions.  For each direction, cycle enumeration followed by
+\cref{thm:finite-map-zeta} gives its exponent vector
+\((c_1,c_2,c_3,c_5)\).  Sorting these vectors within each group produces
+twenty-six distinct multisets, proving (1).  Direct enumeration gives
+(2).  Comparing the cycle-order support with the independently reconstructed
+good-label characters of \cref{thm:good-label-census} proves (3).
+The same exact enumeration gives the two lists in (4).
+\end{proof}
+
+\begin{corollary}[Odd cyclotomic detection]
+\label{cor:dynamics-cyclotomic-detection}
+Among the sporadic simple groups, the ramified dynamical packet detects
+every nonrational center field in \(\Pram(G)\).  Cubic cycles occur exactly
+for the six groups carrying a \(\Q(\zeta_3)\)-factor, while the unique
+quintic cycle occurs for the unique group carrying a
+\(\Q(\zeta_5)\)-factor.
+\end{corollary}
+
+\begin{proof}
+Combine \cref{thm:sporadic-dynamical-separation} with
+\cref{thm:sporadic-census,thm:good-label-census}.
+\end{proof}
+
+\begin{remark}
+The equality of supports in
+\cref{thm:sporadic-dynamical-separation}(3) is a census theorem, not a
+general equivalence for finite groups.  The general implication supplied
+by \cref{lem:orbit-exponent-bound} is one-sided: character order is bounded
+by permutation order on block support.
+\end{remark}

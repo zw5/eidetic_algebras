@@ -1,0 +1,776 @@
+\section{The sporadic simple groups}
+\label{sec:sporadic}
+
+\subsection{Rational factors for the sporadic simple groups}
+
+Names and class counts are those of the \emph{Atlas}~\cite{Atlas}.
+Write
+\[
+ K_{-3}=\Q(\sqrt{-3}),\qquad K_5=\Q(\zeta_5).
+\]
+The degree of $K_5/\Q$ is four.  Hence a factor $M_r(K_5)$ gives four
+conjugate copies of $M_r(\C)$ after scalar extension.
+
+\begin{lemma}
+\label{lem:schur-index}
+Let $B=M_r(D)$ be a simple rational factor with center $K$, Schur index
+$s=\sqrt{\dim_KD}$, and split degree $d=rs$.  Suppose the associated
+$B$-module in rational class-coordinate space has complex multiplicity $m$.
+Then $s$ divides both $d$ and $m$.  In particular, $\gcd(d,m)=1$ forces
+$D=K$.  For the possible indices in the rational group-algebra setting
+see~\cite{Yamada}.
+\end{lemma}
+
+\begin{proof}
+For each embedding $K\hookrightarrow\C$, scalar extension sends $B$ to
+$M_{rs}(\C)$.  A simple left $B$-module has $K$-dimension $rs^2$ and
+complexifies to $s$ copies of the natural $rs$-dimensional module
+\cite[\S{}29]{Reiner}.  Every
+rational $B$-module therefore gives a complex multiplicity divisible by
+$s$, while $s$ also divides $d=rs$.
+\end{proof}
+
+\begin{theorem}
+\label{thm:sporadic-census}
+The rational algebras of the twenty-six sporadic simple
+groups are listed below.  The columns $z$ and $c$ give $\dim_{\Q}Z(A)$ and
+$\dim_{\Q}A'$.  Every simple factor has Schur index one.  The only center
+fields are $\Q$, $K_{-3}$, and $K_5$, and $K_5$ occurs only for $Ly$.
+
+\begingroup
+\footnotesize
+\normalfont
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{longtable}{@{}lrrrrp{0.54\textwidth}@{}}
+\toprule
+$G$ & $k(G)$ & $\dim A$ & $z$ & $c$ & $A$ over $\Q$\\
+\midrule
+\endfirsthead
+\toprule
+$G$ & $k(G)$ & $\dim A$ & $z$ & $c$ & $A$ over $\Q$\\
+\midrule
+\endhead
+$M_{11}$ & 10 & 66 & 3 & 3 & $M_8(\Q)\oplus\Q^2$\\
+$M_{12}$ & 15 & 149 & 3 & 3 & $M_{12}(\Q)\oplus M_2(\Q)\oplus\Q$\\
+$M_{22}$ & 12 & 102 & 3 & 3 & $M_{10}(\Q)\oplus\Q^2$\\
+$M_{23}$ & 17 & 151 & 5 & 5 & $M_{12}(\Q)\oplus M_2(\Q)\oplus\Q^3$\\
+$M_{24}$ & 26 & 452 & 4 & 4 & $M_{21}(\Q)\oplus M_3(\Q)\oplus\Q^2$\\
+$J_1$ & 15 & 111 & 4 & 4 & $M_{10}(\Q)\oplus M_3(\Q)\oplus K_{-3}$\\
+$J_2$ & 21 & 269 & 3 & 3 & $M_{16}(\Q)\oplus M_3(\Q)\oplus M_2(\Q)$\\
+$J_3$ & 21 & 209 & 6 & 6 & $M_{14}(\Q)\oplus M_3(\Q)\oplus\Q^2\oplus K_{-3}$\\
+$J_4$ & 62 & 2000 & 11 & 11 &
+$M_{44}(\Q)\oplus M_7(\Q)\oplus M_2(\Q)^2\oplus\Q\oplus K_{-3}^3$\\
+$HS$ & 24 & 444 & 4 & 4 & $M_{21}(\Q)\oplus\Q^3$\\
+$McL$ & 24 & 334 & 5 & 5 & $M_{18}(\Q)\oplus M_2(\Q)^2\oplus\Q^2$\\
+$He$ & 33 & 647 & 5 & 5 & $M_{25}(\Q)\oplus M_4(\Q)\oplus M_2(\Q)\oplus\Q^2$\\
+$Ru$ & 36 & 792 & 9 & 9 & $M_{28}(\Q)\oplus\Q^4\oplus K_{-3}^2$\\
+$Suz$ & 43 & 1381 & 5 & 5 & $M_{37}(\Q)\oplus M_3(\Q)\oplus\Q^3$\\
+$O'N$ & 30 & 411 & 9 & 12 & $M_{20}(\Q)\oplus M_2(\Q)\oplus\Q^5\oplus K_{-3}$\\
+$Co_1$ & 101 & 9415 & 4 & 4 & $M_{97}(\Q)\oplus M_2(\Q)\oplus\Q^2$\\
+$Co_2$ & 60 & 2926 & 5 & 5 & $M_{54}(\Q)\oplus M_2(\Q)^2\oplus\Q^2$\\
+$Co_3$ & 42 & 1306 & 5 & 5 & $M_{36}(\Q)\oplus M_2(\Q)^2\oplus\Q^2$\\
+$Fi_{22}$ & 65 & 3261 & 7 & 7 & $M_{57}(\Q)\oplus M_2(\Q)^2\oplus\Q^4$\\
+$Fi_{23}$ & 98 & 8294 & 6 & 6 & $M_{91}(\Q)\oplus M_3(\Q)\oplus\Q^4$\\
+$Fi_{24}'$ & 108 & 8853 & 12 & 15 & $M_{94}(\Q)\oplus M_2(\Q)^2\oplus\Q^9$\\
+$HN$ & 54 & 1879 & 7 & 10 & $M_{43}(\Q)\oplus M_5(\Q)\oplus\Q^5$\\
+$Ly$ & 53 & 1543 & 12 & 12 &
+$M_{39}(\Q)\oplus M_3(\Q)\oplus M_2(\Q)\oplus\Q^3\oplus K_{-3}\oplus K_5$\\
+$Th$ & 48 & 1384 & 10 & 10 & $M_{37}(\Q)\oplus M_2(\Q)^2\oplus\Q^7$\\
+$\B$ & 184 & 26598 & 13 & 19 &
+$M_{163}(\Q)\oplus M_3(\Q)\oplus M_2(\Q)^3\oplus\Q^8$\\
+$\M$ & 194 & 28958 & 15 & 15 &
+$M_{170}(\Q)\oplus M_5(\Q)\oplus M_3(\Q)\oplus M_2(\Q)^4\oplus\Q^8$\\
+\bottomrule
+\end{longtable}
+\endgroup
+\end{theorem}
+
+\begin{proof}
+The computation described in \cref{sec:certification} constructs each
+rational word algebra and verifies closure.  A separating central element
+gives square-free center factors; rational central idempotents give the
+dimensions of the corresponding rational ideals.  These data determine the
+split degree and class-space multiplicity of each complex block.  Their
+gcd is one, so \cref{lem:schur-index} gives Schur
+index one.
+
+The quadratic defining polynomials have square-free discriminant $-3$.  The
+only quartic center is defined by
+$x^4+x^3+x^2+x+1$, which gives $K_5$.  Ranks at the primes
+$1{,}000{,}003$ and $1{,}000{,}033$ reproduce the algebra, center, and
+commutant dimensions of each residual calculation.
+\end{proof}
+
+\begin{corollary}
+\label{cor:sporadic-saturation}
+For each of the twenty-two sporadic groups whose class-coordinate
+representation is multiplicity free, \(\Pram(G)=\PAd(G)\).  In particular the
+Monster satisfies \(\Pram(\M)=\PAd(\M)\).
+\end{corollary}
+
+\begin{proof}
+Immediate from \cref{thm:good-label-saturation} and the equality \(z=c\)
+recorded in the table.
+\end{proof}
+
+
+The class-coordinate representation is multiplicity-free for 22 sporadic
+groups.  The exceptions are $O'N$, $Fi_{24}'$, $HN$, and $\B$.
+For the first three, a scalar complex block occurs with multiplicity two.
+For $\B$, one scalar block and one $3$-dimensional block each occur
+with multiplicity two.  The distinction between $z$ and $c$ in the table
+makes these multiplicities visible.
+
+\subsection{Good-label characters}
+\label{sec:characters}
+
+The sporadic census contains nine blocks with center \(\Q(\zeta_3)\) and
+one block with center \(\Q(\zeta_5)\).
+
+Throughout, \(N=\exp(G)\), \(U_N=(\Z/N)^\times\), \(\Gamma=\Psi(U_N)\), and
+\(\chi_D\) denotes the Kronecker symbol \(\bigl(\tfrac D\cdot\bigr)\) of a
+fundamental discriminant \(D\).
+
+\subsubsection{Recovering the unit action from ramified data}
+
+The CTblLib input consists of class sizes, element orders, and the power
+maps \(\sigma_p\) for primes \(p\mid N\).
+
+\begin{definition}
+\label{def:witness-subgroup}
+For an integer \(m\mid N\) put
+\begin{equation}
+ H_m=\bigl\langle\,p\bmod m\ :\ p\ \text{prime},\ p\mid N,\ p\nmid m\,\bigr\rangle
+ \ \leq\ U_m .
+ \label{eq:witness-subgroup}
+\end{equation}
+We call \(G\) \emph{ramified transparent} if \(H_m=U_m\) for every element
+order \(m\) of \(G\).
+\end{definition}
+
+\begin{theorem}
+\label{thm:unit-reconstruction}
+Let \(C\) be a conjugacy class whose elements have order \(m\), let
+\(u\in U_N\), and let \(v\) be any ramified label with \(v\equiv u\pmod m\).
+Then
+\begin{equation}
+ \sigma_u(C)=\sigma_v(C).
+ \label{eq:unit-reconstruction}
+\end{equation}
+If \(G\) is ramified transparent, the maps
+\(\{\sigma_p:p\mid N\}\) determine the action of \(U_N\) on \(\Conj(G)\).
+\end{theorem}
+
+\begin{proof}
+For \(x\in C\) we have \(x^m=1\), so \(x^u=x^{u\bmod m}=x^{v\bmod m}=x^v\),
+whence \(\sigma_u(C)=\sigma_v(C)\), which is
+\eqref{eq:unit-reconstruction}.  A ramified \(v\) with \(v\equiv u\pmod m\)
+exists if and only if \(u\bmod m\in H_m\), because the residues of ramified
+labels modulo \(m\) that are units are the elements of \(H_m\):
+a ramified \(v\) is a product of primes dividing \(N\), those dividing \(m\)
+contribute non-units, and \(\gcd(v,m)=1\) forces every prime factor of \(v\)
+to be coprime to \(m\).  Under ramified transparency this holds for all
+\(m\) and \(u\), and \(\sigma_v\) is computed from the stored maps by
+multiplicativity, \(\sigma_v=\prod_p\sigma_p^{e_p}\) for \(v=\prod_pp^{e_p}\).
+\end{proof}
+
+\begin{proposition}
+\label{prop:reconstruction-coverage}
+Twenty-four of the twenty-six sporadic simple groups are ramified
+transparent.  The exceptions are \(J_3\), where
+\([U_{15}:H_{15}]=2\), and \(Th\), where \([U_{30}:H_{30}]=2\); in both cases
+the missing coset is the one containing \(-1\), and the ambiguity concerns a
+single pair of classes.
+\end{proposition}
+
+\begin{proof}
+Closing the residues of the primes dividing \(N\) under multiplication
+modulo \(m\) and comparing \(|H_m|\) with \(\varphi(m)\) leaves only the two
+displayed failures.  For \(J_3\), \(N=2^3\cdot3^2\cdot
+5\cdot17\cdot19\) and the primes coprime to \(15\) reduce to
+\(2,17,19\equiv2,2,4\pmod{15}\), generating
+\(\langle2\rangle=\{1,2,4,8\}\) of index two in \(U_{15}\); the missing coset
+is \(7\langle2\rangle=\{7,11,13,14\}\ni-1\).  The computation for \(Th\) at
+\(m=30\) is identical in form.
+\end{proof}
+
+For \(J_3\) and \(Th\), call a permutation of \(\Conj(G)\)
+\emph{admissible} if it extends the forced values, preserves class size and
+element order, and commutes with the stored power maps.
+
+\begin{proposition}
+\label{prop:ambiguity-harmless}
+For each sporadic simple group and each chosen generator of \(U_N\), the
+admissible completion is unique.  The stored ramified maps, class sizes, and
+element orders determine the action of \(U_N\) on \(\Conj(G)\).
+\end{proposition}
+
+\begin{proof}
+For the twenty-four ramified transparent groups,
+\cref{thm:unit-reconstruction} determines all images.  For \(J_3\), two of
+the six chosen generators, those with nontrivial \(3\)- and
+\(5\)-components, leave undetermined the two
+classes of element order \(15\), the remaining nineteen images being forced;
+of the two possible assignments only one commutes with \(\sigma_3\).  For
+\(Th\), one of the eight generators, the \(3\)-component, leaves the
+two classes of element order \(30\) undetermined out of forty-eight, and
+there the disambiguating constraint is \(\sigma_2\).  Which of the two
+assignments survives is not uniform: the surviving completion fixes both
+classes for the \(3\)-component of \(J_3\) and transposes them in the other
+two cases.
+\end{proof}
+
+The statement is independent of the displayed generators: once the
+permutations are recovered on any generating set, the homomorphism
+\(U_N\to\operatorname{Sym}(\Conj(G))\) determines every other choice.
+
+\subsubsection{The character census}
+
+\begin{theorem}
+\label{thm:good-label-census}
+Let \(G\) be a sporadic simple group and \(E_k\) a primitive central
+idempotent of \(\Pram(G)\).  There is a character
+\(\lambda_k:U_N\to\mu(K_k)\) with
+\[
+ \Psi_uE_k=\lambda_k(u)E_k .
+\]
+The principal block carries the trivial character.  Of the remaining blocks,
+ten have nonrational center and are listed in
+\cref{sec:nonrational-blocks}; every other one carries the trivial character
+or the Kronecker symbol \(\chi_{D_k}\) of a fundamental discriminant \(D_k\)
+whose prime divisors divide \(N\).  Five blocks, in \(O'N\), \(Fi_{24}'\),
+\(HN\), and \(\B\), have multiplicity two, and \(\Psi_u\) is scalar on those
+as well.
+\end{theorem}
+
+\begin{proof}
+Compute the primitive central idempotents over \(\Q\) and the operators
+\(\Psi_u\) for one generator per cyclic factor of
+\(\prod_{p^a\|N}U_{p^a}\).  The block-local theorem treats the
+multiplicity-one blocks.  Rational row reduction gives
+\(\Psi_uE_k=\lambda_k(u)E_k\) on the five multiplicity-two blocks.  The
+order of \(\lambda_k(u)\) is the least \(e\) with
+\((\Psi_uE_k)^e=E_k\); the character
+order is the least common multiple over the generators; the conductor is
+assembled from the local orders by the standard rule for
+\(U_{p^a}\).  For a rational block the parity \(\lambda_k(-1)\) selects the
+sign of the fundamental discriminant of the given conductor.  Direct
+substitution gives \(\lambda_k(u)=\chi_D(u)\) on the generators.
+
+The principal block character is trivial.  That block is the cyclic
+module \(A\delta_{1A}\) generated by the identity-class coordinate
+(\cref{sec:certification}); every \(\Psi_u\) fixes \(\delta_{1A}\) and
+commutes with \(A\), so it fixes \(A\delta_{1A}\) pointwise.
+\end{proof}
+
+\subsubsection{The ten nonrational blocks}
+\label{sec:nonrational-blocks}
+
+The ten nonrational blocks occur in
+\[
+ J_1,\qquad J_3,\qquad J_4,\qquad Ru,\qquad O'N,\qquad Ly.
+\]
+Nine blocks have center \(\Q(\zeta_3)\); the unique remaining block has
+center \(\Q(\zeta_5)\) and belongs to \(Ly\).  In every case the star acts as
+complex conjugation on the center, the character order is the odd prime
+\(e\) with \(K=\Q(\zeta_e)\), and the block is supported on \(e\)
+classes of a single element order.  Its split degree is
+\(d_k=\varphi(e)=e-1\).  The complete list is:
+
+\input{sections/characters_nonrational_rows}
+
+\begin{remark}
+\label{rem:pariahs}
+The six groups carrying a nonrational center are exactly the six pariah
+groups, the sporadic groups not involved in the Monster.  Every group of
+the happy family has \(\Pram(G)\) split over \(\Q\) with all centers
+rational.  We record this as an observation of the census; no explanation
+is offered here.
+\end{remark}
+
+
+\begin{proposition}
+\label{prop:conductor-determined}
+Let \(E\) be a block whose support consists of classes of a common element
+order \(m\), and let \(\lambda_E\) be its good-label character, of order
+\(e>1\).  Write \(m=2^am'\) with \(m'\) odd.  Then
+\begin{enumerate}
+\item \(\lambda_E\) factors through \(U_m\), so its conductor divides \(m\);
+\item if \(a\leq1\), the conductor divides \(m'\);
+\item if moreover \(m'=p^b\) is a prime power and
+\(e\nmid\varphi(p^{b-1})\), the conductor equals \(m'\).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(1) By \cref{thm:unit-reconstruction} the permutation \(\sigma_u\) acts on a
+class of element order \(m\) through \(u\bmod m\) alone, so \(\lambda_E\)
+factors through \(U_m\) and its conductor divides \(m\).
+
+(2) For odd \(m'\) the Chinese remainder theorem gives
+\(U_{2m'}\cong U_2\times U_{m'}=U_{m'}\), so when \(a\leq1\) the character
+factors through \(U_{m'}\).
+
+(3) The conductor is \(p^c\) for some \(c\leq b\), minimal such that
+\(\lambda_E\) factors through \(U_{p^c}\); then
+\(e=|\lambda_E(U_N)|\) divides \(|U_{p^c}|=\varphi(p^c)\).  For \(p\) odd and
+\(c\leq b-1\) one has \(\varphi(p^c)\mid\varphi(p^{b-1})\), whence
+\(e\mid\varphi(p^{b-1})\), contrary to hypothesis.  Hence \(c=b\).
+\end{proof}
+
+\begin{corollary}
+\label{cor:conductor-odd-part}
+In every row of \cref{sec:nonrational-blocks} the conductor equals the odd
+part \(m'\) of the common element order.
+\end{corollary}
+
+\begin{proof}
+Each row has \(a\leq1\), and \(m'\) is a prime power.  In nine rows \(m'\) is
+one of \(7,13,19,31,37,43,67\); then \(b=1\), and \(e>1\) does not divide
+\(\varphi(p^0)=1\).  In the remaining row \(m'=9\) and \(e=3\), which does
+not divide \(\varphi(3)=2\).
+\Cref{prop:conductor-determined} applies in every case.
+\end{proof}
+
+\begin{example}
+\label{ex:ly-quintic}
+Among the twenty-six sporadic groups, \(Ly\) alone has a quartic center.
+Its five conjugacy classes of elements of order \(31\) form one rational
+class and carry the full \(\Q(\zeta_5)\) factor of \(\Pram(Ly)\).  Writing
+\(R\) for this five-class orbit, the block is
+\[
+ V_k=\Bigl\{f\in\Span_\Q(\delta_C:C\in R)\ :\ \textstyle\sum_{C\in R}f(C)=0\Bigr\},
+ \qquad \dim_\Q V_k=4,
+\]
+and the good labels act through a quintic character of conductor \(31\).
+Thus \(V_k\) is one-dimensional over its cyclotomic endomorphism field:
+\[
+ \End_{\Q[U_N]}(V_k)=\Q(\zeta_5).
+\]
+The character is even, so inversion fixes all five order-\(31\) classes.
+\end{example}
+
+\begin{example}
+\label{ex:j1-cubic}
+The three classes of elements of order \(19\) in \(J_1\) form a single
+rational class; the augmentation-zero part of their span is a two-dimensional
+block with center \(\Q(\sqrt{-3})=\Q(\zeta_3)\), on which the good labels act
+through a cubic character of conductor \(19\).  Since \(19\equiv1\pmod3\),
+such characters exist modulo \(19\); there are two of them, complex conjugate
+to one another, and they are interchanged by the choice of embedding
+\(\Q(\zeta_3)\hookrightarrow\C\).  The pair, not either member, is the
+invariant.
+\end{example}
+
+\begin{theorem}
+\label{thm:regular-rational-class}
+Let \(R\subseteq\Conj(G)\) be a \(\Gamma\)-orbit with \(|R|=r\), let
+\[
+ W_R=\Bigl\{f\in\Span_\Q(\delta_C:C\in R):\textstyle\sum_{C\in R}f(C)=0\Bigr\},
+ \qquad \dim_\Q W_R=r-1 .
+\]
+Then \(\Gamma\) acts regularly on \(R\) through an abelian quotient
+\(A_R\) of order \(r\), and \(W_R\) is \(\Gamma\)-stable.  If \(r\) is
+prime, then \(A_R\cong\Z/r\), and \(\Gamma\) acts on \(W_R\) through a
+character of order \(r\) with values in \(\Q(\zeta_r)\), and
+\(\End_{\Q[\Gamma]}(W_R)=\Q(\zeta_r)\).  If moreover \(W_R\) is a single
+split block of \(\Pram(G)\) of multiplicity one, that block has center
+\(K=\Q(\zeta_r)\) and good-label character of order \(r\).
+\end{theorem}
+
+\begin{proof}
+\(\Gamma\) is abelian by \cref{lem:good-labels}(4) and acts transitively on
+\(R\) by definition of an orbit.  In a transitive action of an abelian group
+all point stabilizers agree; after quotienting by their common value
+\(\Gamma_R\), the action is free and transitive.  Thus
+\(A_R=\Gamma/\Gamma_R\) has order \(r\), and \(R\) is an \(A_R\)-torsor.
+If \(r\) is prime then \(A_R\cong\Z/r\).  The span of \(R\) is the regular
+representation \(\Q[A_R]\), which splits as \(\Q\oplus W_R\) with \(\Q\) the
+invariants; both summands are \(\Gamma\)-stable.
+
+Suppose \(r\) is prime.  Then \(\Q[\Z/r]\cong\Q\times\Q(\zeta_r)\)~\cite{Washington}, the
+second factor acting on \(W_R\), so \(W_R\) is a one-dimensional
+\(\Q(\zeta_r)\)-vector space on which a generator of \(\Z/r\) acts as
+multiplication by \(\zeta_r\).  Hence the induced character has order
+\(r\), its values generate \(\Q(\zeta_r)\), and the commuting algebra is
+\(\Q(\zeta_r)\).  If \(W_R\) is a single split multiplicity-one block of
+\(\Pram(G)\), its center is its commuting algebra inside the isotypic
+component, which contains and is contained in \(\Q(\zeta_r)\) by the previous
+sentence and \cref{thm:block-local-character}.
+\end{proof}
+
+\begin{corollary}
+\label{cor:orbit-divisibility}
+Let \(r\) be an odd prime.  Then \(V_G\) has a \(\Q[U_N]\)-summand with
+endomorphism field \(\Q(\zeta_r)\) if and only if \(r\) divides \(|R|\) for
+some rational class \(R\).
+\end{corollary}
+
+\begin{proof}
+By \cref{thm:rational-class-decomposition},
+\(V_G\cong\bigoplus_R\Q[A_R]\) with \(A_R=U_N/\Gamma_R\) abelian of order
+\(|R|\).  For an abelian group \(A\), the simple summands of \(\Q[A]\) are the
+fields \(\Q(\chi)=\Q(\zeta_{\mathrm{ord}\chi})\) as \(\chi\) runs over the
+Galois orbits of characters of \(A\), each acting on itself, so the
+endomorphism field of that summand is \(\Q(\chi)\).  Since \(r\) is an odd
+prime, \(\Q(\chi)=\Q(\zeta_r)\) holds if and only if
+\(\mathrm{ord}\,\chi\) is
+\(r\) or \(2r\), and such a \(\chi\) exists for some \(A_R\) if and only if
+\(r\) divides the exponent of some \(A_R\), equivalently \(r\mid|A_R|=|R|\).
+\end{proof}
+
+\begin{corollary}
+\label{cor:nonrational-from-orbits}
+Every nonrational block in the sporadic census arises as in
+\cref{thm:regular-rational-class}: nine from rational classes of size three,
+giving \(K=\Q(\zeta_3)=\Q(\sqrt{-3})\) and cubic characters, and one, the
+\(\Q(\zeta_5)\) block of \(Ly\), from a rational class of size five, giving a
+quintic character.  In every case \(d_k=r-1\).
+\end{corollary}
+
+\begin{proof}
+For each block, compute its class support.  For all ten nonrational blocks the
+support is a single orbit \(R\) of prime size \(r\in\{3,5\}\), all of whose
+classes have one element order, and \(d_k=|R|-1\); the block therefore is
+\(W_R\) and \cref{thm:regular-rational-class} applies.  Comparing its
+conclusion with the computed columns, \(K_k=\Q(\zeta_r)\) and the character
+order is \(r\), as tabulated.
+\end{proof}
+
+\Cref{thm:regular-rational-class} with \(r=2\) accounts for a large part of
+the rational half of \cref{thm:good-label-census} as well: a rational class
+splitting into two conjugacy classes contributes a one-dimensional block on
+which \(\Gamma\) acts by a quadratic character.  The blocks with
+\(d_k>r-1\) are the ones where several rational classes fuse into a single
+simple factor; those blocks have a
+conductor divisible by more than one prime.
+
+\subsubsection{The Monster}
+
+\begin{proposition}
+\label{prop:monster-imaginary}
+Let \(\M\) be the Monster, so that \(k(\M)=194\) and
+\begin{equation}
+ N=\exp(\M)=2^5\,3^3\,5^2\cdot7\cdot11\cdot13\cdot17\cdot19\cdot23
+ \cdot29\cdot31\cdot41\cdot47\cdot59\cdot71 .
+ \label{eq:monster-exponent}
+\end{equation}
+Its ramified algebra is
+\[
+ \Pram(\M)\cong
+ M_{170}(\Q)\oplus M_5(\Q)\oplus M_3(\Q)
+ \oplus M_2(\Q)^4\oplus\Q^8.
+\]
+Thus all fifteen blocks have center \(\Q\).  Two carry the trivial character;
+the other thirteen carry quadratic characters whose
+fundamental discriminants are
+\begin{equation}
+ -11,\,-20,\,-23,\,-31,\,-39,\,-47,\,-56,\,-59,\,-71,\,-87,\,-95,\,-104,\,-119 .
+ \label{eq:monster-discriminants}
+\end{equation}
+All thirteen are negative, so every nontrivial good-label character of the
+Monster is odd: \(\lambda_k(-1)=-1\) on each of the thirteen blocks.
+\end{proposition}
+
+\begin{proof}
+The rational decomposition and the character conductors are the Monster row
+of \cref{thm:sporadic-census,thm:good-label-census}.  The inversion map in
+the CTblLib class ordering fixes \(172\) of the \(194\) classes, while the
+unit-group action has \(172\) orbits.  Hence the numbers of real and rational
+classes agree.  The defining module is multiplicity free, so
+\cref{prop:real-rational-parity} forces every nontrivial block character to
+be odd.  The thirteen fundamental discriminants are then determined by
+their certified conductors and their values on the unit-group generators.
+\end{proof}
+
+By \cref{prop:rational-splitting}, the
+\(+1\) eigenspace of \(\Psi_{-1}\) is spanned by the orbit sums of the
+inversion action, so \eqref{eq:monster-discriminants} says that
+every nontrivially twisted block of the Monster is detected already by
+inversion: the twenty-two dimensions \(194-172\) lie entirely in the
+\(-1\) eigenspace of complex conjugation on classes.  This is special to \(\mathbb M\) among the large
+sporadic groups: \(Ly\), for instance, has four blocks with positive
+discriminant \(40,37,24,21\) and one with \(-11\), and \(J_4\) has three
+positive and one negative.
+
+The assignment
+\[
+ G\ \longmapsto\ \bigl\{(K_k,\ d_k,\ \lambda_k)\bigr\}_{k}
+\]
+is an invariant of the marked weighted power system.  The groups \(Co_2\)
+and \(Co_3\) have
+the same rational block list \(M_r(\Q)\oplus M_2(\Q)^2\oplus\Q^2\) up to the
+principal degree, but their residual characters differ, \(\chi_{-23},\chi_{-7}\)
+and \(\chi_{-20},\chi_{-23}\), respectively.
+
+
+\subsection{Rank-one saturation}
+\label{sec:rank-one-saturation}
+
+Let a finite elementary abelian \(2\)-group \(K\) act by weight-preserving
+permutations on a finite weighted set \(X\).  Write
+\[
+ V_X=\bigoplus_{\chi\in\widehat K}V_\chi,
+ \qquad
+ V_\chi=\{v:kv=\chi(k)v\text{ for all }k\in K\}.
+\]
+Every \(V_\chi\) is rational.  Hence
+\[
+ \End_{\Q[K]}(V_X)=\bigoplus_{\chi:m_\chi>0}M_{m_\chi}(\Q),
+ \qquad m_\chi=\dim_\Q V_\chi.
+\]
+
+\begin{lemma}[Cyclic rank-one generation]
+\label{lem:cyclic-rank-one}
+Let \(W\) be a finite-dimensional rational inner-product space, let
+\(B\subseteq\End_\Q(W)\) be a unital star-algebra, and let \(v\in W\).
+If the orthogonal rank-one projection \(E_v\) belongs to \(B\) and
+\(Bv=W\), then \(B=\End_\Q(W)\).
+\end{lemma}
+
+\begin{proof}
+Choose \(b_1,\ldots,b_d\in B\) such that \(b_1v,\ldots,b_dv\) is a basis
+of \(W\).  The operators \(b_iE_vb_j^*\) are nonzero scalar multiples of
+the matrix units for this basis.  They span \(\End_\Q(W)\).
+\end{proof}
+
+For \(a\) in the monoid generated by the labels, put
+\[
+ r_a=P_a^*P_a\mathbf1.
+\]
+The transfer identity makes \(P_a^*P_a=M_{r_a}\).  A finite tuple of the
+functions \(r_a\) will be called a root profile.
+
+\begin{lemma}[Root-profile projectors]
+\label{lem:root-profile-projectors}
+Let \(O\subseteq X\) be a \(K\)-orbit.  If a finite root profile takes one
+joint value on \(O\) and a different joint value on every other orbit,
+then the coordinate projection \(E_O\) belongs to \(\PE(\mathscr X)\).
+\end{lemma}
+
+\begin{proof}
+The diagonal operators \(M_{r_a}\) belong to \(\PE(\mathscr X)\).
+Multivariate Lagrange interpolation in the finitely many joint values
+produces the indicator of \(O\).
+\end{proof}
+
+Suppose \(O=\{x,y\}\) is a two-point orbit belonging to the character
+\(\chi\).  Since \(K\) preserves the weight, \(\mu(x)=\mu(y)\), and
+\[
+ E_O=E_{\delta_x+\delta_y}+E_{\delta_x-\delta_y}
+\]
+after normalizing the two orthogonal vectors.  Once the trivial matrix
+block has been generated, an isolated root profile for \(O\) therefore
+supplies the rank-one projection onto
+\(\Q(\delta_x-\delta_y)\subseteq V_\chi\).
+
+\begin{theorem}[Root-cyclic saturation]
+\label{thm:root-cyclic-saturation}
+Let \(A=\PE(\mathscr X)\subseteq\End_{\Q[K]}(V_X)\), where \(K\) is
+elementary abelian of exponent \(2\).  Assume:
+\begin{enumerate}
+\item a fixed point \(x_0\) has \(E_{x_0}\in A\), and
+      \(A\delta_{x_0}=V_{\mathbf1}\);
+\item for each nontrivial \(\chi\) with \(m_\chi>1\), a two-point orbit
+      \(O_\chi=\{x_\chi,y_\chi\}\) has an isolated root profile and
+      \(A(\delta_{x_\chi}-\delta_{y_\chi})=V_\chi\);
+\item the restrictions of elements of \(A\) separate the characters
+      \(\chi\) with \(m_\chi=1\).
+\end{enumerate}
+Then
+\[
+ A=\End_{\Q[K]}(V_X).
+\]
+The saturation certificate requires
+\[
+ m_{\mathbf1}+
+ \sum_{\substack{\chi\ne\mathbf1\\m_\chi>1}}m_\chi
+\]
+orbit vectors, together with scalar eigenvalue data on the
+one-dimensional channels.
+\end{theorem}
+
+\begin{proof}
+The first hypothesis and \cref{lem:cyclic-rank-one} generate the full
+trivial block.  For every higher-dimensional nontrivial channel,
+\cref{lem:root-profile-projectors} and subtraction of the trivial
+rank-one summand give the projection onto
+\(\Q(\delta_{x_\chi}-\delta_{y_\chi})\).  The cyclic rank-one lemma then
+generates \(\End_\Q(V_\chi)\).  Project away these matrix blocks.  On the
+remaining one-dimensional channels, the separating restrictions generate
+all coordinate idempotents by interpolation.  Thus \(A\) contains each
+simple factor of the displayed commutant.
+\end{proof}
+
+\begin{lemma}[Modular cyclicity]
+\label{lem:modular-cyclicity}
+Let \(R=\Z[1/M]\), let \(B\subseteq M_d(R)\) be generated by fixed
+matrices, and let \(v\in R^d\).  Let \(\ell\nmid M\) be prime.  If words
+\(w_1,\ldots,w_d\) in the generators satisfy
+\[
+ \det[w_1v\ \cdots\ w_dv]\not\equiv0\pmod\ell,
+\]
+then \(v\) is cyclic over \(\Q\).
+\end{lemma}
+
+\begin{proof}
+The orbit determinant belongs to \(R\).  Its nonzero reduction cannot
+come from the zero rational number.
+\end{proof}
+
+\subsection{The Monster symmetry commutant}
+
+Let \(\Gamma_{\M}\) be the group of permutations of the \(194\) Monster
+classes that preserve class size and commute with every prime-power map.  It
+is the automorphism group of the marked weighted power system.
+
+\begin{theorem}[Weighted-power symmetry and commutant]
+\label{thm:monster-symmetry-commutant}
+The group \(\Gamma_{\M}\) is elementary abelian of rank \(14\).  Its
+subgroup generated by the nineteen stored ordinary-table automorphisms has
+rank \(13\), and a complementary factor is generated by
+the involution
+\[
+ (16B\ 16C)(32A\ 32B).
+\]
+For the permutation representation on
+\(V_{\M}=\Q^{\operatorname{Conj}(\M)}\),
+\[
+ \operatorname{End}_{\Q\Gamma_{\M}}(V_{\M})
+ =\Pram(\M)
+ \cong
+ M_{170}(\Q)\oplus M_5(\Q)\oplus M_3(\Q)
+ \oplus M_2(\Q)^{\oplus4}\oplus\Q^{\oplus8}.
+\]
+Its dimension is \(28958\); its center and commutant have dimension \(15\).
+\end{theorem}
+
+\begin{proof}
+Start with the coloring by class size and element order.  Refine it by the
+colors of all prime-power images and by the weighted color counts in each
+reverse fibre.  The first two refinement rounds have \(161\) and \(170\)
+cells, and the second coloring is stable.  Its nonsingleton cells are
+twenty-four pairs.  Commutation with the fifteen prime-power maps joins
+their swap variables into fourteen components of sizes
+\[
+ 2,5,3,2,1,2,2,1,1,1,1,1,1,1.
+\]
+Every component swap satisfies all power-map equations.  Hence
+\(\Gamma_{\M}\cong(C_2)^{14}\).  The binary matrix of the nineteen stored
+table automorphisms has rank \(13\); its missing coordinate is the component
+\((16B\ 16C)(32A\ 32B)\).
+
+Each singleton contributes one trivial vector.  Each pair contributes its
+sum to the trivial channel and its difference to the character of its swap
+component.  Thus
+\[
+ V_{\M}\cong
+ \Q_{\mathbf1}^{170}\oplus
+ \Q_{\chi_1}^{2}\oplus\Q_{\chi_2}^{5}\oplus
+ \Q_{\chi_3}^{3}\oplus\Q_{\chi_4}^{2}\oplus
+ \Q_{\chi_6}^{2}\oplus\Q_{\chi_7}^{2}
+ \oplus\bigoplus_{i\in\{5,8,9,10,11,12,13,14\}}\Q_{\chi_i}.
+\]
+This gives the displayed target commutant.
+
+It remains to prove saturation.  Since every Monster element has exponent
+dividing \(N=\exp(\M)\), the operator
+\(|\M|^{-1}P_N^*P_N\) is the coordinate projection onto \(1A\).
+Modulo \(1000003\), the orbit of \(\delta_{1A}\) has rank \(170\), with a
+retained basis of words of length at most six.  The pairs
+\[
+ 16B/C,\ 23A/B,\ 31A/B,\ 39C/D,\ 44A/B,\ 47A/B
+\]
+have isolated root profiles for the six nontrivial channels of dimension
+greater than one.  Their orbit determinants modulo \(1000003\) are
+\[
+ 1,\ 2,\ 1,\ 1,\ -1,\ 1,
+\]
+with maximum word lengths \(1,3,1,1,1,1\).  Finally, the restrictions of
+\((P_2,P_5,P_7)\) to the eight scalar channels are pairwise distinct.
+The hypotheses of \cref{thm:root-cyclic-saturation} hold, so
+\(\Pram(\M)=\End_{\Q\Gamma_{\M}}(V_{\M})\).  The certificate uses
+\(170+2+5+3+2+2+2=186\) retained orbit vectors.  All denominators are
+invertible modulo \(1000003\), so \cref{lem:modular-cyclicity} lifts the
+seven orbit determinants to \(\Q\).
+\end{proof}
+
+\begin{remark}
+The exceptional rational \(M_2(\Q)\)-channel is the unique symmetry
+direction on which the complementary involution acts and the stored
+table-automorphism subgroup acts trivially.  No identification of the
+stored subgroup with the full unit-power image is used.
+\end{remark}
+
+
+
+\subsection{Symmetries invisible to the character table}
+\label{sec:invisible-symmetries}
+
+Galois conjugation of classes is an automorphism of the character table
+and of the weighted power system, so \(\Psi(U_N)\subseteq\Gamma_G\) for
+every \(G\), where \(\Gamma_G\) is the automorphism group of the weighted
+power system.  \Cref{thm:monster-symmetry-commutant} shows that the
+inclusion can be strict: for the Monster, \(\Gamma_{\M}\cong(C_2)^{14}\)
+while the Galois image has rank \(13\), the thirteen distinct quadratic
+characters of \cref{prop:monster-imaginary}.  The complementary involution
+\((16B\ 16C)(32A\ 32B)\) preserves class sizes and all fifteen prime-power
+maps.  It lies outside the group generated by the stored automorphisms of the
+character table, so it is not induced by any automorphism of that table.
+Thus the classes \(16B,16C\) and \(32A,32B\) are distinguished by the
+character table but not by class sizes and power maps.
+
+At the level of the algebra this involution is visible as the unique
+nonprincipal block of \(\Pram(\M)\) on which the good labels act
+trivially: by \cref{prop:rational-splitting} the Galois-fixed space
+\(V_{\M}^{\Gamma}\) has dimension \(172\), and it decomposes under
+\(\Pram(\M)\) as the \(170\)-dimensional principal block plus one
+\(M_2(\Q)\)-block, the difference channel of the complementary involution.
+
+The same signature occurs elsewhere in the census.  In the character table
+of \cref{thm:good-label-census}, \(Co_2\) and \(Co_3\) each have an
+\(M_2(\Q)\)-block carrying the trivial character, so each has a
+two-dimensional nonprincipal simple factor inside its Galois-fixed space.
+By \cref{thm:balanced-commutant} that factor comes from a balanced kernel
+commuting with \(\Psi(U_N)\) and not accounted for by it.  Whether it
+arises from a permutation of classes, as for the Monster, is not
+determined by the computations reported here; the symmetry group
+\(\Gamma_G\) was computed only for \(\M\).
+
+For \(Fi_{23}\) the answer is known and is negative.  Its census row has a
+scalar block with trivial character spanned by
+\[
+ v=\delta_{12H}-\tfrac13\,\delta_{12L}-\tfrac14\,\delta_{12M}
+   +\tfrac1{12}\,\delta_{12O},
+\]
+a joint eigenvector of all sixteen generators, with eigenvalue \(0\) for
+\(\Psi_2,\Psi_2^*,\Psi_3,\Psi_3^*\) and \(1\) for the others, orthogonal to
+the principal block \(A\delta_{1A}\), which has exact dimension \(91\)
+(\cref{sec:certification}).  The four coefficients of \(v\) have distinct
+absolute values, so no permutation of classes commuting with the power maps
+moves \(v\) except trivially; every element of \(\Q\Gamma_{Fi_{23}}\) acts
+on the Galois-fixed space \(V^\Gamma\) as a scalar, while the projection
+onto \(\Q v\) lies in the commutant and acts on \(V^\Gamma\) nontrivially.
+Hence \(\Bal(Fi_{23})\supsetneq\Q\Gamma_{Fi_{23}}\): the commutant of
+\(\Pram(Fi_{23})\) contains a balanced kernel that is not a combination of
+permutation symmetries.  The Monster's extra block is a permutation
+symmetry invisible to the character table; the \(Fi_{23}\) block is a
+fractional symmetry invisible even to the automorphism group of the weighted
+power system.
+
+\subsection{Computational record}
+\label{sec:characters-record}
+
+The file \path{good_label_characters.json} records, per group, the generators
+of \(U_N\) and the reconstruction data of \cref{thm:unit-reconstruction}, and
+per primitive central idempotent the center field and its defining
+polynomial, \(d_k\), the class support with its element orders, whether that
+support is a single \(\Gamma\)-orbit, the values \(\lambda_k(u)\) at the
+generators with their minimal polynomials and orders, and the conductor,
+parity, and fundamental discriminant of \(\lambda_k\).  It checks
+\eqref{eq:lefschetz}, \eqref{eq:trivial-block-sum},
+\(\sigma_u\sigma_v=\sigma_{uv}\), and the admissible completions of
+\cref{prop:ambiguity-harmless}; each generator has one completion.  Every
+block acts by center scalars and every quadratic block agrees with its
+Kronecker symbol at every generator.

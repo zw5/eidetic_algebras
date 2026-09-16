@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-16",
+  "full_reproduction_from_fresh_gap_exports": "passed",
+  "gap": "4.14.0",
+  "ctbllib": "1.3.9",
+  "pytest_passed": 73,
+  "finite_comparison_groups": 31,
+  "sporadic_groups": 26,
+  "sporadic_rows_agreeing_with_current_paper": 25,
+  "monster": {
+    "status": "verified",
+    "certificate_vectors": 186,
+    "symmetry_rank": 14,
+    "algebra_dimension": 28958
+  },
+  "ramified_slots": 173,
+  "abelian_controls": 80,
+  "dynamical_directions": 258,
+  "distinct_sporadic_packets": 26,
+  "dihedral_quaternion_rungs": 21,
+  "cyclic_prime_power_controls": 8,
+  "psl_prime_powers_in_range": 17,
+  "known_manuscript_discrepancies": [
+    "Fi23: M91(Q) + M3(Q) + Q^4; dimension 8294, center and commutant dimension 6",
+    "PSL(2,29): rational class size 3 at element orders 7 and 14 omitted from example list"
+  ],
+  "manuscript_modified": false,
+  "manuscript_release_ready": false,
+  "source_provenance": "Recovered original core routines plus reconstructed certificate and arithmetic layers; see RECOVERY_PROVENANCE.md"
+}

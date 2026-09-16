@@ -1,0 +1,4 @@
+python-flint>=0.9
+sympy>=1.14
+numpy>=2.0
+pytest>=8

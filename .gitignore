@@ -1,0 +1,26 @@
+.venv/
+.tools/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+
+# build artifacts and local tooling
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+.venv/
+.tools/
+__pycache__/
+.DS_Store
+# forensic recovery material, not needed for reproduction
+ancillary/recovery/
+ancillary/RECOVERY_PROVENANCE.md
+eidetic_computational_supplement_20260916.zip

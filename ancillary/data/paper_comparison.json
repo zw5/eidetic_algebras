@@ -1,0 +1,427 @@
+{
+  "columns": [
+    "class_count",
+    "algebra_dimension",
+    "center_dimension",
+    "commutant_dimension"
+  ],
+  "all_rows_match": true,
+  "rows": [
+    {
+      "group": "M11",
+      "paper": [
+        10,
+        66,
+        3,
+        3
+      ],
+      "computed": [
+        10,
+        66,
+        3,
+        3
+      ],
+      "matches": true
+    },
+    {
+      "group": "M12",
+      "paper": [
+        15,
+        149,
+        3,
+        3
+      ],
+      "computed": [
+        15,
+        149,
+        3,
+        3
+      ],
+      "matches": true
+    },
+    {
+      "group": "M22",
+      "paper": [
+        12,
+        102,
+        3,
+        3
+      ],
+      "computed": [
+        12,
+        102,
+        3,
+        3
+      ],
+      "matches": true
+    },
+    {
+      "group": "M23",
+      "paper": [
+        17,
+        151,
+        5,
+        5
+      ],
+      "computed": [
+        17,
+        151,
+        5,
+        5
+      ],
+      "matches": true
+    },
+    {
+      "group": "M24",
+      "paper": [
+        26,
+        452,
+        4,
+        4
+      ],
+      "computed": [
+        26,
+        452,
+        4,
+        4
+      ],
+      "matches": true
+    },
+    {
+      "group": "J1",
+      "paper": [
+        15,
+        111,
+        4,
+        4
+      ],
+      "computed": [
+        15,
+        111,
+        4,
+        4
+      ],
+      "matches": true
+    },
+    {
+      "group": "J2",
+      "paper": [
+        21,
+        269,
+        3,
+        3
+      ],
+      "computed": [
+        21,
+        269,
+        3,
+        3
+      ],
+      "matches": true
+    },
+    {
+      "group": "J3",
+      "paper": [
+        21,
+        209,
+        6,
+        6
+      ],
+      "computed": [
+        21,
+        209,
+        6,
+        6
+      ],
+      "matches": true
+    },
+    {
+      "group": "J4",
+      "paper": [
+        62,
+        2000,
+        11,
+        11
+      ],
+      "computed": [
+        62,
+        2000,
+        11,
+        11
+      ],
+      "matches": true
+    },
+    {
+      "group": "HS",
+      "paper": [
+        24,
+        444,
+        4,
+        4
+      ],
+      "computed": [
+        24,
+        444,
+        4,
+        4
+      ],
+      "matches": true
+    },
+    {
+      "group": "McL",
+      "paper": [
+        24,
+        334,
+        5,
+        5
+      ],
+      "computed": [
+        24,
+        334,
+        5,
+        5
+      ],
+      "matches": true
+    },
+    {
+      "group": "He",
+      "paper": [
+        33,
+        647,
+        5,
+        5
+      ],
+      "computed": [
+        33,
+        647,
+        5,
+        5
+      ],
+      "matches": true
+    },
+    {
+      "group": "Ru",
+      "paper": [
+        36,
+        792,
+        9,
+        9
+      ],
+      "computed": [
+        36,
+        792,
+        9,
+        9
+      ],
+      "matches": true
+    },
+    {
+      "group": "Suz",
+      "paper": [
+        43,
+        1381,
+        5,
+        5
+      ],
+      "computed": [
+        43,
+        1381,
+        5,
+        5
+      ],
+      "matches": true
+    },
+    {
+      "group": "O'N",
+      "paper": [
+        30,
+        411,
+        9,
+        12
+      ],
+      "computed": [
+        30,
+        411,
+        9,
+        12
+      ],
+      "matches": true
+    },
+    {
+      "group": "Co1",
+      "paper": [
+        101,
+        9415,
+        4,
+        4
+      ],
+      "computed": [
+        101,
+        9415,
+        4,
+        4
+      ],
+      "matches": true
+    },
+    {
+      "group": "Co2",
+      "paper": [
+        60,
+        2926,
+        5,
+        5
+      ],
+      "computed": [
+        60,
+        2926,
+        5,
+        5
+      ],
+      "matches": true
+    },
+    {
+      "group": "Co3",
+      "paper": [
+        42,
+        1306,
+        5,
+        5
+      ],
+      "computed": [
+        42,
+        1306,
+        5,
+        5
+      ],
+      "matches": true
+    },
+    {
+      "group": "Fi22",
+      "paper": [
+        65,
+        3261,
+        7,
+        7
+      ],
+      "computed": [
+        65,
+        3261,
+        7,
+        7
+      ],
+      "matches": true
+    },
+    {
+      "group": "Fi23",
+      "paper": [
+        98,
+        8294,
+        6,
+        6
+      ],
+      "computed": [
+        98,
+        8294,
+        6,
+        6
+      ],
+      "matches": true
+    },
+    {
+      "group": "Fi24'",
+      "paper": [
+        108,
+        8853,
+        12,
+        15
+      ],
+      "computed": [
+        108,
+        8853,
+        12,
+        15
+      ],
+      "matches": true
+    },
+    {
+      "group": "HN",
+      "paper": [
+        54,
+        1879,
+        7,
+        10
+      ],
+      "computed": [
+        54,
+        1879,
+        7,
+        10
+      ],
+      "matches": true
+    },
+    {
+      "group": "Ly",
+      "paper": [
+        53,
+        1543,
+        12,
+        12
+      ],
+      "computed": [
+        53,
+        1543,
+        12,
+        12
+      ],
+      "matches": true
+    },
+    {
+      "group": "Th",
+      "paper": [
+        48,
+        1384,
+        10,
+        10
+      ],
+      "computed": [
+        48,
+        1384,
+        10,
+        10
+      ],
+      "matches": true
+    },
+    {
+      "group": "Baby Monster",
+      "paper": [
+        184,
+        26598,
+        13,
+        19
+      ],
+      "computed": [
+        184,
+        26598,
+        13,
+        19
+      ],
+      "matches": true
+    },
+    {
+      "group": "Monster",
+      "paper": [
+        194,
+        28958,
+        15,
+        15
+      ],
+      "computed": [
+        194,
+        28958,
+        15,
+        15
+      ],
+      "matches": true
+    }
+  ]
+}

@@ -1,0 +1,777 @@
+\section{The algebra and its commutant}
+\label{sec:algebra}
+
+\subsection{Finite weighted power systems}
+\label{sec:systems}
+
+The finite weighted dynamics that the algebra linearizes is the following.
+
+\begin{definition}
+\label{def:weighted-power-system}
+Fix a finite label set \(E\).  A \emph{finite weighted power system} is a
+tuple
+\[
+ \mathscr X=(X,\mu,x_0,(\tau_e)_{e\in E}),
+\]
+where \(X\) is a finite set, \(\mu:X\to\Q_{>0}\) has total mass one,
+\(x_0\in X\), and the maps \(\tau_e:X\to X\) commute and fix \(x_0\).
+An isomorphism \(a:\mathscr X\to\mathscr Y\) is a bijection satisfying
+\[
+ a(x_0)=y_0,\qquad \nu(a(x))=\mu(x),\qquad
+ a\tau_e=\upsilon_ea\quad(e\in E).
+\]
+\end{definition}
+
+\begin{definition}
+\label{def:multiplicative-labels}
+Call the system \emph{multiplicatively labeled} if \(E\) is a set of positive
+integers, \(1\in E\), and
+\begin{equation}
+ \tau_m\tau_n=\tau_{mn}\ \text{whenever }m,n,mn\in E,
+ \qquad
+ \tau_1=\mathrm{id}.
+ \label{eq:label-multiplicativity}
+\end{equation}
+This hypothesis is \emph{not} part of \cref{def:weighted-power-system}; it is
+invoked explicitly where it is used, namely in
+\cref{prop:minimal-prime-generators} and throughout
+\cref{sec:goodlabels}.  The structural results of the present section do
+not require it.
+\end{definition}
+
+Write \(V_X=\operatorname{Map}(X,\Q)\), let
+\(\mathcal B_X=(\delta_x)_{x\in X}\) be its coordinate basis, and put
+\[
+ \langle f,h\rangle_\mu=\sum_{x\in X}\mu(x)f(x)h(x).
+\]
+The pullback \(P_e f=f\circ\tau_e\) has coordinate matrix
+\begin{equation}
+ (P_e)_{xy}=\mathbf1_{\{y=\tau_e(x)\}},
+ \qquad
+ P_e^*=D_\mu^{-1}P_e^{\mathsf T}D_\mu,
+ \quad D_\mu=\operatorname{diag}(\mu(x)).
+ \label{eq:system-adjoint}
+\end{equation}
+Let \(\mathbf c_\mu=(c_x)_{x\in X}\) be the primitive positive integral
+vector proportional to \(\mu\), and regard both
+\(\mathbf c_\mu=\sum_xc_x\delta_x\) and
+\(\eta_0=\delta_{x_0}\) as marked vectors.
+
+\begin{definition}
+\label{def:fully-marked-object}
+The fully marked linear object attached to \(\mathscr X\) is
+\[
+ \mathbf P(\mathscr X)=
+ \bigl(
+ V_X,\mathcal B_X,\langle\ ,\ \rangle_\mu,\mathbf1,\eta_0,
+ \mathbf c_\mu,(P_e)_{e\in E},
+ \PE(\mathscr X)
+ \bigr),
+\]
+where
+\[
+ \PE(\mathscr X)
+ =\Alg_\Q\{I,P_e,P_e^*:e\in E\}\subseteq\End_\Q(V_X).
+\]
+\end{definition}
+
+The forward subalgebra
+\(\SfwdE(\mathscr X)=\Alg_\Q\{I,P_e:e\in E\}\) is commutative, since the
+\(\tau_e\) commute; \(\PE(\mathscr X)\) is its star closure.
+If \(a:\mathscr X\to\mathscr Y\) is an isomorphism, then
+\((U_af)(y)=f(a^{-1}y)\) carries every part of the marking to the
+corresponding part, is an isometry, and intertwines \(P_e^X\) with
+\(P_e^Y\) and their adjoints.  Conversely an isomorphism of fully marked
+objects permutes their coordinate bases and therefore comes from a unique
+system isomorphism.  The fully marked object thus reconstructs
+\((X,\mu,x_0,(\tau_e))\) up to unique simultaneous relabeling.
+
+More general factor maps do not act on the star closure.  Suppose
+\(q:(X,\mu,\tau_e)\to(Y,\nu,\upsilon_e)\) is a surjection with
+\(q_*\mu=\nu\) and \(q\tau_e=\upsilon_eq\).  Pullback
+\(U_q:V_Y\to V_X\), \(U_qf=f\circ q\), is an isometry and
+\begin{equation}
+ P_e^XU_q=U_qP_e^Y.
+ \label{eq:factor-forward-intertwining}
+\end{equation}
+It follows only that
+\(U_q^*(P_e^X)^*=(P_e^Y)^*U_q^*\).  The stronger relation
+\((P_e^X)^*U_q=U_q(P_e^Y)^*\), needed to intertwine the generated
+adjoint-closed algebras, holds if and only if
+\(\operatorname{im}U_q\) is reducing for \(P_e^X\).  Equivalently, for
+every \(x\in X\) and \(z\in Y\),
+\begin{equation}
+ \frac1{\mu(x)}
+ \sum_{\substack{\tau_e y=x\\q(y)=z}}\mu(y)
+ =
+ \begin{cases}
+ \displaystyle\frac{\nu(z)}{\nu(q(x))},
+   &\upsilon_ez=q(x),\\[6pt]
+ 0,&\upsilon_ez\ne q(x).
+ \end{cases}
+ \label{eq:reverse-fibre-condition}
+\end{equation}
+General measure-preserving factor maps need not satisfy this
+reverse-fibre condition.
+
+\subsubsection{The system supplied by a finite group}
+
+Let
+\(\operatorname{Conj}(G)=\{C_1,\ldots,C_k\}\), with
+\(C_1=\{1\}\), and set
+\begin{equation}
+ V_G=\operatorname{Map}(\operatorname{Conj}(G),\Q),\qquad
+ \langle f,h\rangle_G
+ =\frac1{|G|}\sum_{i=1}^k |C_i|f(C_i)h(C_i).
+ \label{eq:coordinate-class-form}
+\end{equation}
+For \(n\geq1\), write \(\sigma_n(i)=j\) when \(g_i^n\in C_j\).
+Then
+\begin{equation}
+ (P_n)_{ij}=\mathbf1_{\{j=\sigma_n(i)\}},
+ \qquad
+ P_n^*=D_G^{-1}P_n^{\mathsf T}D_G,\quad
+ D_G=\operatorname{diag}\left(\frac{|C_i|}{|G|}\right).
+ \label{eq:power-matrix}
+\end{equation}
+Thus \(G\) supplies the finite weighted power system
+\[
+ \mathscr C_E(G)=
+ \left(\operatorname{Conj}(G),\frac{|C|}{|G|},\{1\},
+ ([x]\mapsto[x^n])_{n\in E}\right).
+\]
+Its primitive weight vector is the positive class-size vector
+\((|C_i|)_i\).  We define
+\begin{equation}
+ \mathbf P(G,E)
+ =\mathbf P(\mathscr C_E(G)),\qquad
+ \PE(G)
+ =\PE(\mathscr C_E(G)).
+ \label{eq:ap-definition-structural}
+\end{equation}
+For \(N=\exp(G)\), the canonical label set is
+\(E=\pi(N)\), and we omit \(E\) from the notation.
+
+A group isomorphism induces an isomorphism of these fully marked objects.
+More generally, simultaneous relabeling of classes preserving class sizes,
+the identity class, and all selected power maps is isomorphism at
+the source-system level.
+
+\begin{proposition}
+\label{prop:quotient-factor}
+If \(q:G\twoheadrightarrow Q\) is a quotient, then
+\[
+ \bar q:\operatorname{Conj}(G)\longrightarrow\operatorname{Conj}(Q),
+ \qquad [g]\longmapsto[q(g)],
+\]
+is a surjective measure-preserving factor map for every power map.
+Consequently pullback \(U_{\bar q}:V_Q\to V_G\) is an isometry and
+\(\Psi_n^GU_{\bar q}=U_{\bar q}\Psi_n^Q\).
+It intertwines the full algebras if and only if its image
+is reducing for every \(\Psi_n^G\).
+\end{proposition}
+
+\begin{proof}
+The map on classes is well defined, surjective, and commutes with powers.
+For a class \(D\subseteq Q\), its full inverse image has
+\(|\ker q||D|\) elements.  Hence the sum of the normalized \(G\)-class
+weights above \(D\) is
+\[
+ \frac{|\ker q||D|}{|G|}=\frac{|D|}{|Q|}.
+\]
+The remaining assertions are \eqref{eq:factor-forward-intertwining} and its
+reverse-fibre criterion.
+\end{proof}
+
+A proper subgroup inclusion does not preserve normalized class measure
+(the identity class has mass \(1/|H|\) in \(H\) and \(1/|G|\) in \(G\)),
+so no proper inclusion is a morphism of weighted power systems.
+
+\subsection{Transfer operators}
+\label{sec:transfer}
+
+Let \(\mathscr X=(X,\mu,x_0,(\tau_e)_{e\in E})\) be a finite weighted
+power system.  Write
+\[
+ P_ef=f\circ\tau_e,\qquad L_e=P_e^*,
+\]
+and let \(M_a\) denote multiplication by \(a\in V_X\).  The reverse-fibre
+density is
+\begin{equation}
+ r_e(y)=\frac{1}{\mu(y)}
+ \sum_{\tau_ex=y}\mu(x).
+ \label{eq:reverse-fibre-density}
+\end{equation}
+
+\begin{theorem}
+\label{thm:transfer-calculus}
+For \(a,b\in V_X\) and \(e,f\in E\),
+\begin{align}
+ P_eM_a&=M_{P_ea}P_e,                         \label{eq:covariance}\\
+ L_e\bigl((P_ea)b\bigr)&=aL_eb,               \label{eq:frobenius-transfer}\\
+ L_eM_bP_e&=M_{L_eb},                         \label{eq:transfer-conjugation}\\
+ L_eP_e&=M_{r_e}.                             \label{eq:gram-density}
+\end{align}
+If \(\tau_{ef}=\tau_e\tau_f=\tau_f\tau_e\), then
+\begin{equation}
+ L_eL_f=L_fL_e=L_{ef},\qquad
+ r_{ef}=L_er_f=L_fr_e.
+ \label{eq:density-cocycle}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The first identity follows from
+\[
+ (P_e(ah))(x)=a(\tau_ex)h(\tau_ex).
+\]
+The adjoint is
+\begin{equation}
+ (L_eb)(y)=\frac{1}{\mu(y)}
+ \sum_{\tau_ex=y}\mu(x)b(x).
+ \label{eq:explicit-transfer}
+\end{equation}
+On the fibre \(\tau_ex=y\), the function \(P_ea\) has value \(a(y)\).
+This gives \eqref{eq:frobenius-transfer} and
+\eqref{eq:transfer-conjugation}.  Taking \(b=1\) gives
+\eqref{eq:gram-density}.  The last two identities follow by taking
+adjoints in \(P_eP_f=P_fP_e=P_{ef}\) and applying the result to \(1\).
+\end{proof}
+
+\begin{theorem}
+\label{thm:normality-commutativity}
+For a label \(e\), the following conditions are equivalent:
+\begin{enumerate}
+\item \(P_e\) is normal;
+\item \(P_e\) is unitary;
+\item \(\tau_e\) is a measure-preserving permutation;
+\item \(r_e=1\) and \(\tau_e\) is injective.
+\end{enumerate}
+Consequently
+\begin{equation}
+ \PE(\mathscr X)\text{ is commutative}
+ \quad\Longleftrightarrow\quad
+ \text{every \(\tau_e\) is a measure-preserving permutation.}
+ \label{eq:commutative-dichotomy}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The matrix \(L_eP_e=M_{r_e}\) is diagonal, while
+\begin{equation}
+ (P_eL_e)_{xz}=
+ \begin{cases}
+ \mu(z)/\mu(\tau_ex),&\tau_ez=\tau_ex,\\
+ 0,&\tau_ez\neq\tau_ex.
+ \end{cases}
+ \label{eq:fibre-gram}
+\end{equation}
+If \(P_e\) is normal, \eqref{eq:fibre-gram} is diagonal.  Every fibre of
+\(\tau_e\) then has at most one point, so \(\tau_e\) is a permutation.
+For a permutation,
+\[
+ r_e(y)=\frac{\mu(\tau_e^{-1}y)}{\mu(y)}.
+\]
+Normality gives \(r_e(x)=r_e(\tau_ex)\).  This value is constant on each
+cycle, and its product around the cycle is \(1\); hence \(r_e=1\).
+Thus \(\tau_e\) preserves \(\mu\) and \(P_e\) is unitary.  The remaining
+implications are immediate.  Commuting measure-preserving permutations
+have commuting inverse pullbacks, which proves
+\eqref{eq:commutative-dichotomy}.
+\end{proof}
+
+\begin{corollary}
+\label{cor:group-normal-labels}
+Let \(G\) be finite and \(N=\exp(G)\).  Then
+\begin{equation}
+ \Psi_n\text{ is normal}
+ \quad\Longleftrightarrow\quad
+ \Psi_n\text{ is unitary}
+ \quad\Longleftrightarrow\quad
+ (n,N)=1.
+ \label{eq:good-normal-unitary}
+\end{equation}
+The good labels generate a commutative semisimple algebra.  Every prime
+\(p\mid N\) gives a nonnormal generator; hence
+\(\Pram(G)\) is noncommutative for \(G\neq1\).
+\end{corollary}
+
+\begin{proof}
+If \((n,N)=1\), choose \(m\) with \(mn\equiv1\pmod N\).  The \(n\)-th and
+\(m\)-th power maps are inverse permutations of the conjugacy classes and
+preserve their sizes.  If \((n,N)>1\), choose
+\(p\mid(n,N)\) and an element \(x\) of order \(p\).  Then \(x^n=1\), so
+the power map on conjugacy classes is not injective.  Apply
+\cref{thm:normality-commutativity}.
+\end{proof}
+
+For a finite group, \eqref{eq:reverse-fibre-density} becomes
+\begin{equation}
+ r_n(C)=
+ \frac{\#\{x\in G:x^n\in C\}}{|C|},
+ \qquad
+ r_n(\{1\})=\#\{x\in G:x^n=1\}.
+ \label{eq:group-ramification-density}
+\end{equation}
+Thus \(\Psi_n^*\Psi_n\) is the diagonal operator of class-resolved
+\(n\)-th root counts.
+
+\begin{definition}
+\label{def:ramification-algebra}
+Let \(\mathcal R_E(\mathscr X)\) be the smallest unital
+\(\Q\)-subalgebra of \(V_X\) stable under every \(L_e\), and put
+\[
+ \mathcal D_E(\mathscr X)
+ =\{M_a:a\in\mathcal R_E(\mathscr X)\}.
+\]
+\end{definition}
+
+\begin{proposition}
+\label{prop:ramification-diagonal-inclusion}
+For every finite weighted power system,
+\[
+ \mathcal D_E(\mathscr X)\subseteq\PE(\mathscr X).
+\]
+\end{proposition}
+
+\begin{proof}
+The identity multiplier belongs to \(\PE(\mathscr X)\).  If \(M_a\)
+belongs to it, then
+\[
+ M_{L_ea}=L_eM_aP_e\in\PE(\mathscr X)
+\]
+by \eqref{eq:transfer-conjugation}.  The multipliers are closed under sums
+and products.
+\end{proof}
+
+\begin{theorem}
+\label{thm:diagonal-separation}
+Let \(\Gamma_E\) be the undirected graph on \(X\) with edges
+\(\{x,\tau_ex\}\).  If \(\mathcal R_E(\mathscr X)\) separates the points
+of \(X\), then
+\begin{equation}
+ \PE(\mathscr X)
+ \cong\bigoplus_{C\in\pi_0(\Gamma_E)}
+       \End_\Q(\Q^C).
+ \label{eq:component-matrix-decomposition}
+\end{equation}
+If \(\Gamma_E\) is connected, then
+\(\PE(\mathscr X)=\End_\Q(V_X)\).
+\end{theorem}
+
+\begin{proof}
+For \(x\in X\) and \(y\neq x\), choose \(a_y\in\mathcal R_E(\mathscr X)\)
+with \(a_y(x)\neq a_y(y)\).  Then
+\[
+ q_x=\prod_{y\neq x}
+ \frac{a_y-a_y(y)}{a_y(x)-a_y(y)}
+ =\mathbf1_{\{x\}}.
+\]
+Hence all coordinate idempotents \(E_{xx}=M_{\mathbf1_{\{x\}}}\) belong
+to \(\PE(\mathscr X)\).  If \(\tau_ex=y\), then
+\[
+ E_{xx}P_eE_{yy}=E_{xy},\qquad
+ E_{yy}L_eE_{xx}=\frac{\mu(x)}{\mu(y)}E_{yx}.
+\]
+Products along paths in \(\Gamma_E\) give every matrix unit within each
+connected component.  Every generator preserves the direct sum over the
+components.
+\end{proof}
+
+\subsection{Semisimplicity and the rational bicommutant}
+\label{sec:structural-theory}
+
+\begin{proposition}
+\label{prop:minimal-prime-generators}
+Let \(N=\exp(G)\).  Each of the following sets generates the same unital
+adjoint-closed rational algebra:
+\begin{equation}
+ \{\Psi_p:p\mid N,\ p\text{ prime}\},\qquad
+ \{\Psi_{p^a}:p^a\mid N\},\qquad
+ \{\Psi_d:d\mid N\}.
+ \label{eq:equivalent-exponent-sets}
+\end{equation}
+Here the adjoints of the displayed operators are included in every case.
+This common algebra is \(\Pram(G)\).
+\end{proposition}
+
+\begin{proof}
+The identities
+\[
+ \Psi_m\Psi_n=\Psi_{mn},\qquad \Psi_1=I
+\]
+show that \(\Psi_{p^a}=\Psi_p^a\) and, for
+\(d=\prod_p p^{a_p}\), that \(\Psi_d=\prod_p\Psi_p^{a_p}\).
+Thus all divisor maps lie in the algebra generated by the prime maps.  The
+reverse inclusion is immediate.  Since an adjoint-closed algebra contains
+the adjoint of every product it contains, adjoining the listed adjoints
+does not alter this conclusion.
+\end{proof}
+
+\begin{example}
+\label{ex:all-positive-exponents}
+The algebra generated by \(\Psi_n\) for every \(n\geq1\) need not equal
+\(\Pram(G)\).  For example, if \(G=C_5\), the canonical
+algebra uses only \(\Psi_5\), whereas \(\Psi_2\) cyclically permutes the
+four nonidentity class coordinates.  The prime-exponent calculation in
+\cref{thm:prime-exponent-structural} shows that the canonical algebra acts
+scalarly on a three-dimensional complementary summand, while \(\Psi_2\)
+does not.  Hence the all-exponents algebra is strictly larger in this
+example.  Proposition~\ref{prop:minimal-prime-generators} concerns the
+power maps indexed by divisors of \(\exp(G)\), not all residue classes
+modulo the exponent.
+\end{example}
+
+For a subalgebra \(A\subseteq\End_F(V)\), write \(A'\) for its commutant
+in \(\End_F(V)\).
+
+\begin{lemma}
+\label{lem:commutant-base-change}
+Let \(F\subseteq K\) be a field extension, let \(V\) be a
+finite-dimensional \(F\)-vector space, and let
+\(A\subseteq\End_F(V)\) be a finite-dimensional subalgebra.  Under the
+natural identification
+\(\End_F(V)\otimes_FK\cong\End_K(V\otimes_FK)\), one has
+\begin{equation}
+ A'\otimes_FK=(A\otimes_FK)'.
+ \label{eq:commutant-base-change}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Choose an \(F\)-basis \(a_1,\ldots,a_r\) of \(A\).  Its commutant is the
+kernel of the \(F\)-linear map
+\[
+ T:\End_F(V)\longrightarrow\End_F(V)^{\oplus r},
+ \qquad X\longmapsto([X,a_1],\ldots,[X,a_r]).
+\]
+Tensoring the exact sequence
+\(0\to\ker T\to\End_F(V)\xrightarrow{T}\End_F(V)^{\oplus r}\)
+with the field \(K\) preserves exactness.  The resulting kernel is
+the commutant of \(A\otimes_FK\).
+\end{proof}
+
+\begin{theorem}
+\label{thm:rational-bicommutant-structural}
+Let \(X\) be a finite set, let \(\mu:X\to\Q_{>0}\), and let
+\((T_e)_{e\in E}\) be any finite family of \(\Q\)-linear operators on
+\(V_X\), with \(T_e^*=D_\mu^{-1}T_e^{\mathsf T}D_\mu\) the adjoint for
+\(\langle\ ,\ \rangle_\mu\).  Then
+\[
+ A=\Alg_\Q\{I,T_e,T_e^*:e\in E\}\subseteq\End_\Q(V_X)
+\]
+is a finite-dimensional semisimple \(\Q\)-algebra, and in its defining
+faithful representation on \(V_X\),
+\begin{equation}
+ A''=A.
+ \label{eq:rational-double-commutant-structural}
+\end{equation}
+Over \(\C\), there are pairwise inequivalent simple modules
+\(W_1,\ldots,W_t\), with \(d_j=\dim_\C W_j\), and multiplicity spaces
+\(M_j\), with \(m_j=\dim_\C M_j\), such that
+\begin{equation}
+ V_X\otimes_\Q\C\cong\bigoplus_{j=1}^t W_j\otimes_\C M_j,
+ \qquad
+ A\otimes_\Q\C\cong
+ \bigoplus_{j=1}^t\End_\C(W_j)\otimes I_{M_j}.
+ \label{eq:complex-isotypic-structural}
+\end{equation}
+In particular,
+\begin{equation}
+ \dim_\C(A\otimes\C)=\sum_jd_j^2,
+ \qquad
+ \dim_\C(A\otimes\C)'=\sum_jm_j^2.
+ \label{eq:dimension-identities-structural}
+\end{equation}
+In particular this applies to \(A=\PE(\mathscr X)\) for any finite weighted
+power system, and to \(A=\PE(G)\) for any finite group and any exponent set.
+\end{theorem}
+
+\Cref{thm:rational-bicommutant-structural} uses none of the structure of a
+finite weighted power system beyond positivity of \(\mu\): the \(T_e\) need
+not commute, need not be pullbacks along maps, and no distinguished point is
+required.  The star closure alone gives semisimplicity and
+bicommutancy.  Deterministic commuting maps are what give the balanced-kernel
+description of the commutant (\cref{thm:balanced-commutant}), and
+multiplicative labels are what give the good-label arithmetic of
+\cref{sec:goodlabels}.
+
+\begin{proof}
+The algebra is finite-dimensional because it is a subalgebra of
+\(\End_\Q(V_X)\).  Extend scalars and the form \(\langle\ ,\ \rangle_\mu\) to
+obtain a Hermitian form on \(V_X\otimes_\Q\C\), positive definite because
+\(\mu>0\) pointwise.  The complex
+algebra \(A_\C=A\otimes_\Q\C\) is closed under its Hilbert-space adjoint.
+Its Jacobson radical \(J\) is preserved by the involution because the
+involution is an anti-automorphism and the radical is invariant under
+anti-automorphisms.  If \(x\in J\), then \(x^*x\in J\).  The ideal \(J\)
+is nilpotent, while \(x^*x\) is positive semidefinite, so \(x^*x=0\) and
+therefore \(x=0\).  Hence \(A_\C\), and consequently \(A\), is
+semisimple.
+
+The finite-dimensional structure theorem gives the
+isotypic form \eqref{eq:complex-isotypic-structural}~\cite{Wedderburn}.
+On each summand,
+its commutant is
+\(I_{W_j}\otimes\End_\C(M_j)\), whose commutant is
+\(\End_\C(W_j)\otimes I_{M_j}\).  Thus \(A_\C''=A_\C\).  Applying
+\cref{lem:commutant-base-change} twice gives
+\[
+ A''\otimes_\Q\C=A_\C''=A_\C=A\otimes_\Q\C.
+\]
+Since \(A\subseteq A''\) and scalar extension preserves dimensions, this
+forces \(A=A''\).  The dimension identities follow from the two displayed
+block actions.  The final sentence is the case \(T_e=P_e\) of
+\eqref{eq:system-adjoint}.
+\end{proof}
+
+\begin{proposition}
+\label{prop:field-extension}
+For every field extension \(K/\Q\),
+\[
+ \PE(G)\otimes_\Q K
+ =\Alg_K\{I,\Psi_n,\Psi_n^*:n\in E\}
+ \subseteq\End_K(V_G\otimes_\Q K),
+\]
+and
+\[
+ \PE(G)'\otimes_\Q K
+ =(\PE(G)\otimes_\Q K)'.
+\]
+Thus extension of scalars preserves the represented algebra and its
+commutant.  The center fields, Galois orbits, and Schur indices give the
+descent data that recover the rational form from its complex blocks.
+\end{proposition}
+
+\begin{proof}
+The first identity follows because the same rational generators span both
+sides after scalar extension.  The second is
+\cref{lem:commutant-base-change}.  The final statement is the usual
+distinction between a semisimple rational algebra and its split complex
+form.
+\end{proof}
+
+Direct products exhibit a natural tensor relation, but the power
+maps on the two factors are synchronized by the same exponent.
+
+\begin{proposition}
+\label{prop:direct-product-containment}
+For finite groups \(G,H\) and any exponent set \(E\), the canonical
+identification
+\[
+ V_{G\times H}\cong V_G\otimes_\Q V_H
+\]
+satisfies
+\begin{equation}
+ \Psi_n^{G\times H}=\Psi_n^G\otimes\Psi_n^H,
+ \qquad
+ (\Psi_n^{G\times H})^*=(\Psi_n^G)^*\otimes(\Psi_n^H)^*.
+ \label{eq:direct-product-generators}
+\end{equation}
+Consequently,
+\begin{equation}
+ \PE(G\times H)
+ \subseteq
+ \PE(G)\otimes_\Q
+ \PE(H)
+ \label{eq:direct-product-containment}
+\end{equation}
+as represented algebras.  For canonical exponent sets, take
+\(E=\pi(\exp(G\times H))\).  If \(G\) and \(H\) have the same prime
+divisors in their exponents, the right-hand side is
+\(\Pram(G)\otimes
+\Pram(H)\).
+\end{proposition}
+
+\begin{proof}
+The conjugacy classes of \(G\times H\) are the products \(C_i\times D_j\),
+their sizes multiply, and
+\((g,h)^n=(g^n,h^n)\).  Hence the power matrix and class-measure matrix are
+\[
+ P_n^{G\times H}=P_n^G\otimes P_n^H,
+ \qquad
+ D_{G\times H}=D_G\otimes D_H.
+\]
+Formula \eqref{eq:system-adjoint} gives the second identity in
+\eqref{eq:direct-product-generators}.  Every generator on the left of
+\eqref{eq:direct-product-containment} therefore belongs to the tensor
+product algebra on the right.
+\end{proof}
+
+Containment in \eqref{eq:direct-product-containment} can be strict.  The
+left-hand algebra is generated by the synchronized tensors
+\(\Psi_n^G\otimes\Psi_n^H\) and their adjoints.  Tensor-product equality
+holds if and only if these synchronized generators recover the separate
+operators \(\Psi_n^G\otimes I\) and \(I\otimes\Psi_n^H\); strict examples
+occur when they do not.
+
+\subsection{Balanced kernels}
+\label{sec:reconstruction}
+
+The commutant has an intrinsic description directly on the weighted colored
+digraph.  Write an operator \(S\in\End_\Q(V_X)\) in coordinate form
+\[
+ (Sf)(x)=\sum_{y\in X}s(x,y)f(y).
+\]
+
+\begin{definition}
+\label{def:balanced-kernels}
+Let \(\operatorname{Bal}(\mathscr X)\) be the rational vector space of
+kernels \(s:X\times X\to\Q\) satisfying, for every \(e\in E\) and
+\(x,z\in X\),
+\begin{align}
+ s(\tau_e x,z)
+ &=\sum_{\tau_e y=z}s(x,y),
+ \label{eq:forward-balance}\\
+ \frac{\mu(z)}{\mu(\tau_e z)}s(x,\tau_e z)
+ &=\frac1{\mu(x)}
+   \sum_{\tau_e y=x}\mu(y)s(y,z).
+ \label{eq:reverse-balance}
+\end{align}
+Composition is ordinary matrix multiplication.
+\end{definition}
+
+These kernels balance the colored forward fibres and their weighted reverse
+fibres.
+
+\begin{theorem}
+\label{thm:balanced-commutant}
+For every finite weighted power system,
+\begin{equation}
+ \PE(\mathscr X)'=\operatorname{Bal}(\mathscr X).
+ \label{eq:balanced-commutant}
+\end{equation}
+Consequently
+\begin{equation}
+ \PE(\mathscr X)
+ =\operatorname{Bal}(\mathscr X)'
+ \label{eq:balanced-bicommutant}
+\end{equation}
+in its defining representation.  In particular the algebra is determined
+by the fractional symmetries of the weighted colored power graph.
+\end{theorem}
+
+\begin{proof}
+Matrix multiplication gives
+\[
+ (SP_e)_{xz}=\sum_{\tau_e y=z}s(x,y),\qquad
+ (P_eS)_{xz}=s(\tau_ex,z),
+\]
+so \(SP_e=P_eS\) is \eqref{eq:forward-balance}.  From
+\((P_e^*)_{yz}=\mu(z)\mu(y)^{-1}\mathbf1_{\{y=\tau_ez\}}\), one obtains
+\[
+ (SP_e^*)_{xz}=\frac{\mu(z)}{\mu(\tau_ez)}s(x,\tau_ez),\qquad
+ (P_e^*S)_{xz}=\frac1{\mu(x)}
+ \sum_{\tau_ey=x}\mu(y)s(y,z).
+\]
+Thus \(SP_e^*=P_e^*S\) is \eqref{eq:reverse-balance}.  Commuting with all
+generators is equivalent to commuting with their generated algebra, proving
+\eqref{eq:balanced-commutant}.  Equation
+\eqref{eq:balanced-bicommutant} is the rational double-commutant theorem.
+\end{proof}
+
+Every source automorphism gives a permutation kernel in
+\(\operatorname{Bal}(\mathscr X)\).  Automorphisms alone usually do not
+describe the commutant: arbitrary rational balanced
+kernels are allowed.  For a group of prime exponent with \(k\) classes, the
+decomposition in \cref{thm:prime-exponent-structural} gives the explicit
+formula
+\[
+ \Pram(G)'
+ \cong \Q\oplus M_{k-2}(\Q),\qquad
+ \dim_\Q\Pram(G)'=1+(k-2)^2.
+\]
+This is a family-level commutant calculation rather than a matrix nullspace
+computation.
+
+Between the fully marked object and the abstract algebra there are two
+further levels of forgetting: the operator-marked object
+\((V,\langle\ ,\ \rangle,\mathbf1,\eta_0,(P_e))\), which retains the
+labeled generators but not the coordinate basis, and the unmarked
+represented algebra \((A\subseteq\End_\Q(V),V,\langle\ ,\ \rangle)\).
+Each arrow in this tower is strict over \(\Q\): the last by the
+prime-exponent family, where \(C_3\) and \(C_5\) share the abstract algebra
+\(M_2(\Q)\oplus\Q\) but have scalar factors of different multiplicity; the
+others by explicit small systems, which we omit.
+
+\subsection{Saturation and two degeneracy criteria}
+\label{sec:saturation}
+
+The balanced-kernel theorem converts three questions about the algebra
+into questions about balanced kernels on the power graph: when enlarging the
+label set changes nothing, when the algebra degenerates to everything, and
+when the commutant is commutative.  All three are consequences of
+\cref{thm:balanced-commutant} together with the rational double commutant.
+
+\begin{theorem}
+\label{thm:saturation}
+Let \(E\subseteq F\) be finite label sets for \(\mathscr X\).  Then
+\(\PE(\mathscr X)\subseteq\PF(\mathscr X)\), and
+\begin{equation}
+ \PE(\mathscr X)=\PF(\mathscr X)
+ \iff
+ \text{every }P_f,\ f\in F\setminus E,\ \text{commutes with every}
+ \ s\in\operatorname{Bal}_E(\mathscr X),
+ \label{eq:saturation}
+\end{equation}
+where \(\operatorname{Bal}_E\) is the balanced-kernel algebra of
+\cref{def:balanced-kernels} formed with the label set \(E\).  We call \(E\)
+\emph{saturated} in \(F\) when this holds.
+\end{theorem}
+
+\begin{proof}
+The containment is clear.  For the criterion, \(\PF\) is generated
+over \(\PE\) by the operators \(P_f\) and \(P_f^*\) with \(f\in
+F\setminus E\), so equality holds if and only if every such \(P_f\) lies in
+\(\PE\); the adjoints then follow because \(\PE\) is adjoint closed.  By
+\cref{thm:rational-bicommutant-structural} and
+\cref{thm:balanced-commutant},
+\[
+ \PE=(\PE)''=\operatorname{Bal}_E(\mathscr X)',
+\]
+and membership in the commutant of \(\operatorname{Bal}_E\) is the
+stated commutation condition.
+\end{proof}
+
+\begin{corollary}
+\label{cor:full-matrix}
+\(\PE(\mathscr X)=\End_\Q(V_X)\) if and only if
+\(\operatorname{Bal}_E(\mathscr X)=\Q\), that is, if and only if the only
+balanced kernels are the scalar multiples of the identity kernel.
+\end{corollary}
+
+\begin{proof}
+By \cref{thm:balanced-commutant} and the double commutant,
+\(\PE=\operatorname{Bal}_E'\), and a subalgebra of \(\End_\Q(V_X)\) equals
+\(\End_\Q(V_X)\) if and only if its commutant is the scalars.
+\end{proof}
+
+\begin{corollary}
+\label{cor:multiplicity-free}
+The defining module \(V_X\) is multiplicity free over
+\(\PE(\mathscr X)\otimes\C\) if and only if \(\operatorname{Bal}_E(\mathscr X)\) is
+commutative, and in that case
+\(\dim_\Q Z(\PE)=\dim_\Q\operatorname{Bal}_E(\mathscr X)\).
+\end{corollary}
+
+\begin{proof}
+With notation as in \eqref{eq:complex-isotypic-structural}, the commutant
+after scalar extension is \(\bigoplus_j\End_\C(M_j)\), which is commutative
+if and only if every \(m_j=1\).  Commutativity is preserved and reflected by
+scalar extension, so it may be tested over \(\Q\).  When all \(m_j=1\) the
+commutant and the center both have dimension \(t\).
+\end{proof}
+
+Throughout, ``\(V_G\) is multiplicity free'' means the condition of
+\cref{cor:multiplicity-free}: the commutant \(\Pram(G)'\) is commutative.
+
+First, \cref{thm:saturation} explains \cref{ex:all-positive-exponents}: for
+\(G=C_5\) the label set \(E=\{5\}\) is not saturated in \(\{2,5\}\), because
+\(\operatorname{Bal}_{\{5\}}\) contains the full matrix algebra of the
+three-dimensional complementary summand, and the four-cycle \(\Psi_2\) does
+not commute with all of it.  Hence
+\(\Pram(C_5)\subsetneq\PAd(C_5)\), with dimensions \(5\) and \(7\).
+Second, by \cref{cor:full-matrix} the equality \(\dim A=k(G)^2\) holds when
+the weighted colored power graph admits no balanced kernel beyond
+the scalars.  The rows of \cref{thm:comparison-panel} with
+\(\dim A=k(G)^2\) therefore record rigidity of that graph.

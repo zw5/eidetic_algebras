@@ -1,0 +1,3429 @@
+{
+  "schema": "finite-group-adams-star-census-v2",
+  "provenance": {
+    "python": "3.14.7",
+    "python_flint": "0.9.0",
+    "flint": "3.6.0",
+    "numpy": "2.5.3",
+    "gap": "4.14.0",
+    "ctbllib": "1.3.9",
+    "raw_input_sha256": "7ee2091361fe22dc430ad0ef89dcfac23f578a8f140f60728a0c256e4fbb6d06",
+    "runner_sha256": "fb673db33b2249dadb48d8356b6517a23f11724d102f70fd172c894d7aa64b50",
+    "gap_export_sha256": "b5b6601d4c7e2ae2116a76eb7edde4c32d4b17b0d536ef6830aeebff969d3d4e"
+  },
+  "exponent_set_rule": "all prime powers p^a dividing exp(G)",
+  "modular_primes": [
+    1000003,
+    1000033
+  ],
+  "groups": [
+    {
+      "label": "C2",
+      "family": "cyclic",
+      "group_order": 2,
+      "class_count": 2,
+      "group_exponent": 2,
+      "directions": [
+        2
+      ],
+      "direction_count": 1,
+      "algebra_dimension": 4,
+      "ambient_endomorphism_dimension": 4,
+      "algebra_density": 1.0,
+      "center_dimension": 1,
+      "commutant_dimension": 1,
+      "double_commutant_dimension": 4,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 4,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 4,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 4,
+        "exact_word_basis_rank": 4,
+        "exact_basis_plus_generator_products_rank": 4,
+        "expected_dimension": 4,
+        "exact_center_dimension": 1,
+        "expected_center_dimension": 1,
+        "exact_commutant_dimension": 1,
+        "expected_commutant_dimension": 1,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 1,
+        "spectral_gap_float": 2.0,
+        "largest_eigenvalue_float": 2.0,
+        "trace_float": 2.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 1,
+        "nullity": 1,
+        "singleton_ranks": [
+          1
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": true,
+        "rank_distribution": {
+          "0": 1,
+          "1": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "label": "C3",
+      "family": "cyclic",
+      "group_order": 3,
+      "class_count": 3,
+      "group_exponent": 3,
+      "directions": [
+        3
+      ],
+      "direction_count": 1,
+      "algebra_dimension": 5,
+      "ambient_endomorphism_dimension": 9,
+      "algebra_density": 0.5555555555555556,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 5,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 5,
+        "exact_word_basis_rank": 5,
+        "exact_basis_plus_generator_products_rank": 5,
+        "expected_dimension": 5,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 2,
+        "spectral_gap_float": 1.0,
+        "largest_eigenvalue_float": 3.0,
+        "trace_float": 4.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 2,
+        "nullity": 1,
+        "singleton_ranks": [
+          2
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "2": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "label": "C4",
+      "family": "cyclic",
+      "group_order": 4,
+      "class_count": 4,
+      "group_exponent": 4,
+      "directions": [
+        2,
+        4
+      ],
+      "direction_count": 2,
+      "algebra_dimension": 10,
+      "ambient_endomorphism_dimension": 16,
+      "algebra_density": 0.625,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 10,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 10,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 10,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 10,
+        "exact_word_basis_rank": 10,
+        "exact_basis_plus_generator_products_rank": 10,
+        "expected_dimension": 10,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 3,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 3,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 3,
+        "spectral_gap_float": 2.0,
+        "largest_eigenvalue_float": 6.0,
+        "trace_float": 12.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 3,
+        "nullity": 1,
+        "singleton_ranks": [
+          3,
+          3
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "3": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2
+          ],
+          [
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "label": "C5",
+      "family": "cyclic",
+      "group_order": 5,
+      "class_count": 5,
+      "group_exponent": 5,
+      "directions": [
+        5
+      ],
+      "direction_count": 1,
+      "algebra_dimension": 5,
+      "ambient_endomorphism_dimension": 25,
+      "algebra_density": 0.2,
+      "center_dimension": 2,
+      "commutant_dimension": 10,
+      "double_commutant_dimension": 5,
+      "multiplicity_free": false,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 10
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 10
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 5,
+        "exact_word_basis_rank": 5,
+        "exact_basis_plus_generator_products_rank": 5,
+        "expected_dimension": 5,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 10,
+        "expected_commutant_dimension": 10,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 3
+        },
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 3
+          },
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 4,
+        "spectral_gap_float": 1.0,
+        "largest_eigenvalue_float": 5.0,
+        "trace_float": 8.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 4,
+        "nullity": 1,
+        "singleton_ranks": [
+          4
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "4": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "label": "C6",
+      "family": "cyclic",
+      "group_order": 6,
+      "class_count": 6,
+      "group_exponent": 6,
+      "directions": [
+        2,
+        3
+      ],
+      "direction_count": 2,
+      "algebra_dimension": 20,
+      "ambient_endomorphism_dimension": 36,
+      "algebra_density": 0.5555555555555556,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 20,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 20,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 20,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 20,
+        "exact_word_basis_rank": 20,
+        "exact_basis_plus_generator_products_rank": 20,
+        "expected_dimension": 20,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 4,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 4,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 5,
+        "spectral_gap_float": 1.7639320225002109,
+        "largest_eigenvalue_float": 6.236067977499792,
+        "trace_float": 18.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 5,
+        "nullity": 1,
+        "singleton_ranks": [
+          4,
+          4
+        ],
+        "minimum_saturating_cardinality": 2,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "4": 2,
+          "5": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "label": "C8",
+      "family": "cyclic",
+      "group_order": 8,
+      "class_count": 8,
+      "group_exponent": 8,
+      "directions": [
+        2,
+        4,
+        8
+      ],
+      "direction_count": 3,
+      "algebra_dimension": 21,
+      "ambient_endomorphism_dimension": 64,
+      "algebra_density": 0.328125,
+      "center_dimension": 3,
+      "commutant_dimension": 6,
+      "double_commutant_dimension": 21,
+      "multiplicity_free": false,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 21,
+          "center_dimension": 3,
+          "commutant_dimension": 6
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 21,
+          "center_dimension": 3,
+          "commutant_dimension": 6
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 21,
+        "exact_word_basis_rank": 21,
+        "exact_basis_plus_generator_products_rank": 21,
+        "expected_dimension": 21,
+        "exact_center_dimension": 3,
+        "expected_center_dimension": 3,
+        "exact_commutant_dimension": 6,
+        "expected_commutant_dimension": 6,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 2
+        },
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 4,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 2
+          },
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 4,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 7,
+        "spectral_gap_float": 2.2679491924311237,
+        "largest_eigenvalue_float": 13.475311781710225,
+        "trace_float": 42.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 7,
+        "nullity": 1,
+        "singleton_ranks": [
+          7,
+          7,
+          7
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 3,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "7": 7
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2
+          ],
+          [
+            4
+          ],
+          [
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "label": "C12",
+      "family": "cyclic",
+      "group_order": 12,
+      "class_count": 12,
+      "group_exponent": 12,
+      "directions": [
+        2,
+        4,
+        3
+      ],
+      "direction_count": 3,
+      "algebra_dimension": 50,
+      "ambient_endomorphism_dimension": 144,
+      "algebra_density": 0.3472222222222222,
+      "center_dimension": 4,
+      "commutant_dimension": 4,
+      "double_commutant_dimension": 50,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 50,
+          "center_dimension": 4,
+          "commutant_dimension": 4
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 50,
+          "center_dimension": 4,
+          "commutant_dimension": 4
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 50,
+        "exact_word_basis_rank": 50,
+        "exact_basis_plus_generator_products_rank": 50,
+        "expected_dimension": 50,
+        "exact_center_dimension": 4,
+        "expected_center_dimension": 4,
+        "exact_commutant_dimension": 4,
+        "expected_commutant_dimension": 4,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 3,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 6,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 3,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 6,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 11,
+        "spectral_gap_float": 2.0376113918159655,
+        "largest_eigenvalue_float": 9.340172973252068,
+        "trace_float": 60.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 11,
+        "nullity": 1,
+        "singleton_ranks": [
+          10,
+          9,
+          9
+        ],
+        "minimum_saturating_cardinality": 2,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "9": 2,
+          "10": 2,
+          "11": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "label": "C2xC2",
+      "family": "elementary_abelian",
+      "group_order": 4,
+      "class_count": 4,
+      "group_exponent": 2,
+      "directions": [
+        2
+      ],
+      "direction_count": 1,
+      "algebra_dimension": 5,
+      "ambient_endomorphism_dimension": 16,
+      "algebra_density": 0.3125,
+      "center_dimension": 2,
+      "commutant_dimension": 5,
+      "double_commutant_dimension": 5,
+      "multiplicity_free": false,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 5
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 5
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 5,
+        "exact_word_basis_rank": 5,
+        "exact_basis_plus_generator_products_rank": 5,
+        "expected_dimension": 5,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 5,
+        "expected_commutant_dimension": 5,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 2
+        },
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 2
+          },
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 3,
+        "spectral_gap_float": 1.0,
+        "largest_eigenvalue_float": 4.0,
+        "trace_float": 6.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 3,
+        "nullity": 1,
+        "singleton_ranks": [
+          3
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "3": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "label": "C2^3",
+      "family": "elementary_abelian",
+      "group_order": 8,
+      "class_count": 8,
+      "group_exponent": 2,
+      "directions": [
+        2
+      ],
+      "direction_count": 1,
+      "algebra_dimension": 5,
+      "ambient_endomorphism_dimension": 64,
+      "algebra_density": 0.078125,
+      "center_dimension": 2,
+      "commutant_dimension": 37,
+      "double_commutant_dimension": 5,
+      "multiplicity_free": false,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 37
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 37
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 5,
+        "exact_word_basis_rank": 5,
+        "exact_basis_plus_generator_products_rank": 5,
+        "expected_dimension": 5,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 37,
+        "expected_commutant_dimension": 37,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 6
+        },
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 6
+          },
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 7,
+        "spectral_gap_float": 1.0,
+        "largest_eigenvalue_float": 8.0,
+        "trace_float": 14.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 7,
+        "nullity": 1,
+        "singleton_ranks": [
+          7
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "7": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "label": "C3xC3",
+      "family": "elementary_abelian",
+      "group_order": 9,
+      "class_count": 9,
+      "group_exponent": 3,
+      "directions": [
+        3
+      ],
+      "direction_count": 1,
+      "algebra_dimension": 5,
+      "ambient_endomorphism_dimension": 81,
+      "algebra_density": 0.06172839506172839,
+      "center_dimension": 2,
+      "commutant_dimension": 50,
+      "double_commutant_dimension": 5,
+      "multiplicity_free": false,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 50
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 50
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 5,
+        "exact_word_basis_rank": 5,
+        "exact_basis_plus_generator_products_rank": 5,
+        "expected_dimension": 5,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 50,
+        "expected_commutant_dimension": 50,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 7
+        },
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 7
+          },
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 8,
+        "spectral_gap_float": 0.9999999999999989,
+        "largest_eigenvalue_float": 9.0,
+        "trace_float": 16.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 8,
+        "nullity": 1,
+        "singleton_ranks": [
+          8
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "8": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "label": "D8",
+      "family": "dihedral",
+      "group_order": 8,
+      "class_count": 5,
+      "group_exponent": 4,
+      "directions": [
+        2,
+        4
+      ],
+      "direction_count": 2,
+      "algebra_dimension": 17,
+      "ambient_endomorphism_dimension": 25,
+      "algebra_density": 0.68,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 17,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 17,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 17,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 17,
+        "exact_word_basis_rank": 17,
+        "exact_basis_plus_generator_products_rank": 17,
+        "expected_dimension": 17,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 4,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 4,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 4,
+        "spectral_gap_float": 1.4903597773225583,
+        "largest_eigenvalue_float": 13.863260039755911,
+        "trace_float": 22.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 4,
+        "nullity": 1,
+        "singleton_ranks": [
+          4,
+          4
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "4": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2
+          ],
+          [
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "label": "D10",
+      "family": "dihedral",
+      "group_order": 10,
+      "class_count": 4,
+      "group_exponent": 10,
+      "directions": [
+        2,
+        5
+      ],
+      "direction_count": 2,
+      "algebra_dimension": 10,
+      "ambient_endomorphism_dimension": 16,
+      "algebra_density": 0.625,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 10,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 10,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 10,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 10,
+        "exact_word_basis_rank": 10,
+        "exact_basis_plus_generator_products_rank": 10,
+        "expected_dimension": 10,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 3,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 3,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 3,
+        "spectral_gap_float": 0.9999999999999993,
+        "largest_eigenvalue_float": 10.000000000000002,
+        "trace_float": 16.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 3,
+        "nullity": 1,
+        "singleton_ranks": [
+          2,
+          2
+        ],
+        "minimum_saturating_cardinality": 2,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "2": 2,
+          "3": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "label": "D12",
+      "family": "dihedral",
+      "group_order": 12,
+      "class_count": 6,
+      "group_exponent": 6,
+      "directions": [
+        2,
+        3
+      ],
+      "direction_count": 2,
+      "algebra_dimension": 26,
+      "ambient_endomorphism_dimension": 36,
+      "algebra_density": 0.7222222222222222,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 26,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 26,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 26,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 26,
+        "exact_word_basis_rank": 26,
+        "exact_basis_plus_generator_products_rank": 26,
+        "expected_dimension": 26,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 5,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 5,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 5,
+        "spectral_gap_float": 0.6544309000344047,
+        "largest_eigenvalue_float": 10.069268990864575,
+        "trace_float": 18.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 5,
+        "nullity": 1,
+        "singleton_ranks": [
+          4,
+          2
+        ],
+        "minimum_saturating_cardinality": 2,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "2": 1,
+          "4": 1,
+          "5": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "label": "D16",
+      "family": "dihedral",
+      "group_order": 16,
+      "class_count": 7,
+      "group_exponent": 8,
+      "directions": [
+        2,
+        4,
+        8
+      ],
+      "direction_count": 3,
+      "algebra_dimension": 26,
+      "ambient_endomorphism_dimension": 49,
+      "algebra_density": 0.5306122448979592,
+      "center_dimension": 2,
+      "commutant_dimension": 5,
+      "double_commutant_dimension": 26,
+      "multiplicity_free": false,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 26,
+          "center_dimension": 2,
+          "commutant_dimension": 5
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 26,
+          "center_dimension": 2,
+          "commutant_dimension": 5
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 26,
+        "exact_word_basis_rank": 26,
+        "exact_basis_plus_generator_products_rank": 26,
+        "expected_dimension": 26,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 5,
+        "expected_commutant_dimension": 5,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 2
+        },
+        {
+          "matrix_size": 5,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 2
+          },
+          {
+            "matrix_size": 5,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 6,
+        "spectral_gap_float": 1.9188353560991322,
+        "largest_eigenvalue_float": 37.69146526628875,
+        "trace_float": 61.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 6,
+        "nullity": 1,
+        "singleton_ranks": [
+          6,
+          6,
+          6
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 3,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "6": 7
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2
+          ],
+          [
+            4
+          ],
+          [
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "label": "Q8",
+      "family": "quaternion",
+      "group_order": 8,
+      "class_count": 5,
+      "group_exponent": 4,
+      "directions": [
+        2,
+        4
+      ],
+      "direction_count": 2,
+      "algebra_dimension": 10,
+      "ambient_endomorphism_dimension": 25,
+      "algebra_density": 0.4,
+      "center_dimension": 2,
+      "commutant_dimension": 5,
+      "double_commutant_dimension": 10,
+      "multiplicity_free": false,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 10,
+          "center_dimension": 2,
+          "commutant_dimension": 5
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 10,
+          "center_dimension": 2,
+          "commutant_dimension": 5
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 10,
+        "exact_word_basis_rank": 10,
+        "exact_basis_plus_generator_products_rank": 10,
+        "expected_dimension": 10,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 5,
+        "expected_commutant_dimension": 5,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 2
+        },
+        {
+          "matrix_size": 3,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 2
+          },
+          {
+            "matrix_size": 3,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 4,
+        "spectral_gap_float": 1.9999999999999998,
+        "largest_eigenvalue_float": 10.0,
+        "trace_float": 22.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 4,
+        "nullity": 1,
+        "singleton_ranks": [
+          4,
+          4
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "4": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2
+          ],
+          [
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "label": "S3",
+      "family": "symmetric",
+      "group_order": 6,
+      "class_count": 3,
+      "group_exponent": 6,
+      "directions": [
+        2,
+        3
+      ],
+      "direction_count": 2,
+      "algebra_dimension": 9,
+      "ambient_endomorphism_dimension": 9,
+      "algebra_density": 1.0,
+      "center_dimension": 1,
+      "commutant_dimension": 1,
+      "double_commutant_dimension": 9,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 9,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 9,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 9,
+        "exact_word_basis_rank": 9,
+        "exact_basis_plus_generator_products_rank": 9,
+        "expected_dimension": 9,
+        "exact_center_dimension": 1,
+        "expected_center_dimension": 1,
+        "exact_commutant_dimension": 1,
+        "expected_commutant_dimension": 1,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 3,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 3,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 2,
+        "spectral_gap_float": 1.0,
+        "largest_eigenvalue_float": 6.0,
+        "trace_float": 7.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 2,
+        "nullity": 1,
+        "singleton_ranks": [
+          1,
+          1
+        ],
+        "minimum_saturating_cardinality": 2,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": true,
+        "rank_distribution": {
+          "0": 1,
+          "1": 2,
+          "2": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "label": "S4",
+      "family": "symmetric",
+      "group_order": 24,
+      "class_count": 5,
+      "group_exponent": 12,
+      "directions": [
+        2,
+        4,
+        3
+      ],
+      "direction_count": 3,
+      "algebra_dimension": 25,
+      "ambient_endomorphism_dimension": 25,
+      "algebra_density": 1.0,
+      "center_dimension": 1,
+      "commutant_dimension": 1,
+      "double_commutant_dimension": 25,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 25,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 25,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 25,
+        "exact_word_basis_rank": 25,
+        "exact_basis_plus_generator_products_rank": 25,
+        "expected_dimension": 25,
+        "exact_center_dimension": 1,
+        "expected_center_dimension": 1,
+        "exact_commutant_dimension": 1,
+        "expected_commutant_dimension": 1,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 5,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 5,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 4,
+        "spectral_gap_float": 1.0989991339951752,
+        "largest_eigenvalue_float": 33.57688317949249,
+        "trace_float": 40.99999999999999
+      },
+      "coherence_polymatroid": {
+        "full_rank": 4,
+        "nullity": 1,
+        "singleton_ranks": [
+          3,
+          3,
+          1
+        ],
+        "minimum_saturating_cardinality": 2,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "label": "S5",
+      "family": "symmetric",
+      "group_order": 120,
+      "class_count": 7,
+      "group_exponent": 60,
+      "directions": [
+        2,
+        4,
+        3,
+        5
+      ],
+      "direction_count": 4,
+      "algebra_dimension": 49,
+      "ambient_endomorphism_dimension": 49,
+      "algebra_density": 1.0,
+      "center_dimension": 1,
+      "commutant_dimension": 1,
+      "double_commutant_dimension": 49,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 49,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 49,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 49,
+        "exact_word_basis_rank": 49,
+        "exact_basis_plus_generator_products_rank": 49,
+        "expected_dimension": 49,
+        "exact_center_dimension": 1,
+        "expected_center_dimension": 1,
+        "exact_commutant_dimension": 1,
+        "expected_commutant_dimension": 1,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 7,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 7,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 6,
+        "spectral_gap_float": 0.8079944992626772,
+        "largest_eigenvalue_float": 125.41524734077726,
+        "trace_float": 141.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 6,
+        "nullity": 1,
+        "singleton_ranks": [
+          4,
+          4,
+          2,
+          1
+        ],
+        "minimum_saturating_cardinality": 3,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 3,
+          "5": 6,
+          "6": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            4,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "label": "S6",
+      "family": "symmetric",
+      "group_order": 720,
+      "class_count": 11,
+      "group_exponent": 60,
+      "directions": [
+        2,
+        4,
+        3,
+        5
+      ],
+      "direction_count": 4,
+      "algebra_dimension": 59,
+      "ambient_endomorphism_dimension": 121,
+      "algebra_density": 0.48760330578512395,
+      "center_dimension": 3,
+      "commutant_dimension": 3,
+      "double_commutant_dimension": 59,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 59,
+          "center_dimension": 3,
+          "commutant_dimension": 3
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 59,
+          "center_dimension": 3,
+          "commutant_dimension": 3
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 59,
+        "exact_word_basis_rank": 59,
+        "exact_basis_plus_generator_products_rank": 59,
+        "expected_dimension": 59,
+        "exact_center_dimension": 3,
+        "expected_center_dimension": 3,
+        "exact_commutant_dimension": 3,
+        "expected_commutant_dimension": 3,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 3,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 7,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 3,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 7,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 10,
+        "spectral_gap_float": 0.36213165329062497,
+        "largest_eigenvalue_float": 555.2764828516639,
+        "trace_float": 605.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 10,
+        "nullity": 1,
+        "singleton_ranks": [
+          7,
+          7,
+          4,
+          1
+        ],
+        "minimum_saturating_cardinality": 3,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "1": 1,
+          "4": 1,
+          "5": 1,
+          "7": 3,
+          "8": 3,
+          "9": 3,
+          "10": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            4,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "label": "S7",
+      "family": "symmetric",
+      "group_order": 5040,
+      "class_count": 15,
+      "group_exponent": 420,
+      "directions": [
+        2,
+        4,
+        3,
+        5,
+        7
+      ],
+      "direction_count": 5,
+      "algebra_dimension": 225,
+      "ambient_endomorphism_dimension": 225,
+      "algebra_density": 1.0,
+      "center_dimension": 1,
+      "commutant_dimension": 1,
+      "double_commutant_dimension": 225,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 225,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 225,
+          "center_dimension": 1,
+          "commutant_dimension": 1
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 225,
+        "exact_word_basis_rank": 225,
+        "exact_basis_plus_generator_products_rank": 225,
+        "expected_dimension": 225,
+        "exact_center_dimension": 1,
+        "expected_center_dimension": 1,
+        "exact_commutant_dimension": 1,
+        "expected_commutant_dimension": 1,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 15,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 15,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 14,
+        "spectral_gap_float": 0.3604548690527754,
+        "largest_eigenvalue_float": 2877.1623340553397,
+        "trace_float": 3003.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 14,
+        "nullity": 1,
+        "singleton_ranks": [
+          10,
+          10,
+          6,
+          2,
+          1
+        ],
+        "minimum_saturating_cardinality": 4,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 3,
+          "11": 6,
+          "12": 6,
+          "13": 6,
+          "14": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            5,
+            7
+          ],
+          [
+            4,
+            3,
+            5,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "label": "S8",
+      "family": "symmetric",
+      "group_order": 40320,
+      "class_count": 22,
+      "group_exponent": 840,
+      "directions": [
+        2,
+        4,
+        8,
+        3,
+        5,
+        7
+      ],
+      "direction_count": 6,
+      "algebra_dimension": 442,
+      "ambient_endomorphism_dimension": 484,
+      "algebra_density": 0.9132231404958677,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 442,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 442,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 442,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 442,
+        "exact_word_basis_rank": 442,
+        "exact_basis_plus_generator_products_rank": 442,
+        "expected_dimension": 442,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 21,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 21,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 21,
+        "spectral_gap_float": 0.38190196591216014,
+        "largest_eigenvalue_float": 26586.583305742555,
+        "trace_float": 27203.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 21,
+        "nullity": 1,
+        "singleton_ranks": [
+          16,
+          16,
+          16,
+          9,
+          3,
+          1
+        ],
+        "minimum_saturating_cardinality": 4,
+        "minimum_saturating_subset_count": 3,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "1": 1,
+          "3": 1,
+          "4": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "12": 1,
+          "16": 7,
+          "17": 7,
+          "18": 7,
+          "19": 14,
+          "20": 14,
+          "21": 7
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            5,
+            7
+          ],
+          [
+            4,
+            3,
+            5,
+            7
+          ],
+          [
+            8,
+            3,
+            5,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "label": "A4",
+      "family": "alternating",
+      "group_order": 12,
+      "class_count": 4,
+      "group_exponent": 6,
+      "directions": [
+        2,
+        3
+      ],
+      "direction_count": 2,
+      "algebra_dimension": 10,
+      "ambient_endomorphism_dimension": 16,
+      "algebra_density": 0.625,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 10,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 10,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 10,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 10,
+        "exact_word_basis_rank": 10,
+        "exact_basis_plus_generator_products_rank": 10,
+        "expected_dimension": 10,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 3,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 3,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 3,
+        "spectral_gap_float": 1.0,
+        "largest_eigenvalue_float": 12.0,
+        "trace_float": 18.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 3,
+        "nullity": 1,
+        "singleton_ranks": [
+          2,
+          2
+        ],
+        "minimum_saturating_cardinality": 2,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "2": 2,
+          "3": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "label": "A5",
+      "family": "alternating",
+      "group_order": 60,
+      "class_count": 5,
+      "group_exponent": 30,
+      "directions": [
+        2,
+        3,
+        5
+      ],
+      "direction_count": 3,
+      "algebra_dimension": 17,
+      "ambient_endomorphism_dimension": 25,
+      "algebra_density": 0.68,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 17,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 17,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 17,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 17,
+        "exact_word_basis_rank": 17,
+        "exact_basis_plus_generator_products_rank": 17,
+        "expected_dimension": 17,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 4,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 4,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 4,
+        "spectral_gap_float": 0.9999999999999994,
+        "largest_eigenvalue_float": 60.0,
+        "trace_float": 71.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 4,
+        "nullity": 1,
+        "singleton_ranks": [
+          2,
+          2,
+          2
+        ],
+        "minimum_saturating_cardinality": 3,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "2": 3,
+          "3": 3,
+          "4": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "label": "A6",
+      "family": "alternating",
+      "group_order": 360,
+      "class_count": 7,
+      "group_exponent": 60,
+      "directions": [
+        2,
+        4,
+        3,
+        5
+      ],
+      "direction_count": 4,
+      "algebra_dimension": 27,
+      "ambient_endomorphism_dimension": 49,
+      "algebra_density": 0.5510204081632653,
+      "center_dimension": 3,
+      "commutant_dimension": 3,
+      "double_commutant_dimension": 27,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 27,
+          "center_dimension": 3,
+          "commutant_dimension": 3
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 27,
+          "center_dimension": 3,
+          "commutant_dimension": 3
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 27,
+        "exact_word_basis_rank": 27,
+        "exact_basis_plus_generator_products_rank": 27,
+        "expected_dimension": 27,
+        "exact_center_dimension": 3,
+        "expected_center_dimension": 3,
+        "exact_commutant_dimension": 3,
+        "expected_commutant_dimension": 3,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 5,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 5,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 6,
+        "spectral_gap_float": 0.9999999999999989,
+        "largest_eigenvalue_float": 405.22376019974206,
+        "trace_float": 422.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 6,
+        "nullity": 1,
+        "singleton_ranks": [
+          3,
+          2,
+          3,
+          2
+        ],
+        "minimum_saturating_cardinality": 3,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 3,
+          "6": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            4,
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "label": "A7",
+      "family": "alternating",
+      "group_order": 2520,
+      "class_count": 9,
+      "group_exponent": 420,
+      "directions": [
+        2,
+        4,
+        3,
+        5,
+        7
+      ],
+      "direction_count": 5,
+      "algebra_dimension": 65,
+      "ambient_endomorphism_dimension": 81,
+      "algebra_density": 0.8024691358024691,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 65,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 65,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 65,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 65,
+        "exact_word_basis_rank": 65,
+        "exact_basis_plus_generator_products_rank": 65,
+        "expected_dimension": 65,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 8,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 8,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 8,
+        "spectral_gap_float": 0.7585651536709509,
+        "largest_eigenvalue_float": 2415.0873511304,
+        "trace_float": 2448.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 8,
+        "nullity": 1,
+        "singleton_ranks": [
+          3,
+          3,
+          4,
+          2,
+          2
+        ],
+        "minimum_saturating_cardinality": 4,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "2": 2,
+          "3": 4,
+          "4": 1,
+          "5": 8,
+          "6": 7,
+          "7": 6,
+          "8": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            5,
+            7
+          ],
+          [
+            4,
+            3,
+            5,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "label": "A8",
+      "family": "alternating",
+      "group_order": 20160,
+      "class_count": 14,
+      "group_exponent": 420,
+      "directions": [
+        2,
+        4,
+        3,
+        5,
+        7
+      ],
+      "direction_count": 5,
+      "algebra_dimension": 146,
+      "ambient_endomorphism_dimension": 196,
+      "algebra_density": 0.7448979591836735,
+      "center_dimension": 3,
+      "commutant_dimension": 3,
+      "double_commutant_dimension": 146,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 146,
+          "center_dimension": 3,
+          "commutant_dimension": 3
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 146,
+          "center_dimension": 3,
+          "commutant_dimension": 3
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 146,
+        "exact_word_basis_rank": 146,
+        "exact_basis_plus_generator_products_rank": 146,
+        "expected_dimension": 146,
+        "exact_center_dimension": 3,
+        "expected_center_dimension": 3,
+        "exact_commutant_dimension": 3,
+        "expected_commutant_dimension": 3,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 12,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 12,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 13,
+        "spectral_gap_float": 0.3476374241563913,
+        "largest_eigenvalue_float": 12747.049674058728,
+        "trace_float": 12907.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 13,
+        "nullity": 1,
+        "singleton_ranks": [
+          6,
+          6,
+          7,
+          4,
+          3
+        ],
+        "minimum_saturating_cardinality": 4,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 3,
+          "7": 1,
+          "8": 2,
+          "9": 4,
+          "10": 3,
+          "11": 6,
+          "12": 6,
+          "13": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            5,
+            7
+          ],
+          [
+            4,
+            3,
+            5,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "label": "PSL(2,7)",
+      "family": "lie_type_simple",
+      "group_order": 168,
+      "class_count": 6,
+      "group_exponent": 84,
+      "directions": [
+        2,
+        4,
+        3,
+        7
+      ],
+      "direction_count": 4,
+      "algebra_dimension": 26,
+      "ambient_endomorphism_dimension": 36,
+      "algebra_density": 0.7222222222222222,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 26,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 26,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 26,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 26,
+        "exact_word_basis_rank": 26,
+        "exact_basis_plus_generator_products_rank": 26,
+        "expected_dimension": 26,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 5,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 5,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 5,
+        "spectral_gap_float": 1.0000000000000013,
+        "largest_eigenvalue_float": 189.2255524710735,
+        "trace_float": 201.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 5,
+        "nullity": 1,
+        "singleton_ranks": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "minimum_saturating_cardinality": 3,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "2": 5,
+          "3": 1,
+          "4": 6,
+          "5": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            7
+          ],
+          [
+            4,
+            3,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "label": "PSL(2,8)",
+      "family": "lie_type_simple",
+      "group_order": 504,
+      "class_count": 9,
+      "group_exponent": 126,
+      "directions": [
+        2,
+        3,
+        9,
+        7
+      ],
+      "direction_count": 4,
+      "algebra_dimension": 29,
+      "ambient_endomorphism_dimension": 81,
+      "algebra_density": 0.35802469135802467,
+      "center_dimension": 5,
+      "commutant_dimension": 5,
+      "double_commutant_dimension": 29,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 29,
+          "center_dimension": 5,
+          "commutant_dimension": 5
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 29,
+          "center_dimension": 5,
+          "commutant_dimension": 5
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 29,
+        "exact_word_basis_rank": 29,
+        "exact_basis_plus_generator_products_rank": 29,
+        "expected_dimension": 29,
+        "exact_center_dimension": 5,
+        "expected_center_dimension": 5,
+        "exact_commutant_dimension": 5,
+        "expected_commutant_dimension": 5,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 5,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 5,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 8,
+        "spectral_gap_float": 0.9999999999999982,
+        "largest_eigenvalue_float": 560.2011885363737,
+        "trace_float": 604.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 8,
+        "nullity": 1,
+        "singleton_ranks": [
+          5,
+          6,
+          6,
+          5
+        ],
+        "minimum_saturating_cardinality": 3,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "5": 2,
+          "6": 4,
+          "7": 6,
+          "8": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            7
+          ],
+          [
+            2,
+            9,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "label": "PSL(2,11)",
+      "family": "lie_type_simple",
+      "group_order": 660,
+      "class_count": 8,
+      "group_exponent": 330,
+      "directions": [
+        2,
+        3,
+        5,
+        11
+      ],
+      "direction_count": 4,
+      "algebra_dimension": 38,
+      "ambient_endomorphism_dimension": 64,
+      "algebra_density": 0.59375,
+      "center_dimension": 3,
+      "commutant_dimension": 3,
+      "double_commutant_dimension": 38,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 38,
+          "center_dimension": 3,
+          "commutant_dimension": 3
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 38,
+          "center_dimension": 3,
+          "commutant_dimension": 3
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 38,
+        "exact_word_basis_rank": 38,
+        "exact_basis_plus_generator_products_rank": 38,
+        "expected_dimension": 38,
+        "exact_center_dimension": 3,
+        "expected_center_dimension": 3,
+        "exact_commutant_dimension": 3,
+        "expected_commutant_dimension": 3,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 6,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 6,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 7,
+        "spectral_gap_float": 0.6453045168774068,
+        "largest_eigenvalue_float": 550.0007332659898,
+        "trace_float": 572.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 7,
+        "nullity": 1,
+        "singleton_ranks": [
+          4,
+          3,
+          2,
+          2
+        ],
+        "minimum_saturating_cardinality": 4,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "2": 2,
+          "3": 1,
+          "4": 3,
+          "5": 4,
+          "6": 4,
+          "7": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            3,
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "label": "Heis27",
+      "family": "nilpotent_nonabelian",
+      "group_order": 27,
+      "class_count": 11,
+      "group_exponent": 3,
+      "directions": [
+        3
+      ],
+      "direction_count": 1,
+      "algebra_dimension": 5,
+      "ambient_endomorphism_dimension": 121,
+      "algebra_density": 0.04132231404958678,
+      "center_dimension": 2,
+      "commutant_dimension": 82,
+      "double_commutant_dimension": 5,
+      "multiplicity_free": false,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 82
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 5,
+          "center_dimension": 2,
+          "commutant_dimension": 82
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 5,
+        "exact_word_basis_rank": 5,
+        "exact_basis_plus_generator_products_rank": 5,
+        "expected_dimension": 5,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 82,
+        "expected_commutant_dimension": 82,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 9
+        },
+        {
+          "matrix_size": 2,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 9
+          },
+          {
+            "matrix_size": 2,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 10,
+        "spectral_gap_float": 0.9999999999999989,
+        "largest_eigenvalue_float": 27.0,
+        "trace_float": 36.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 10,
+        "nullity": 1,
+        "singleton_ranks": [
+          10
+        ],
+        "minimum_saturating_cardinality": 1,
+        "minimum_saturating_subset_count": 1,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "10": 1
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "label": "Frob20",
+      "family": "frobenius",
+      "group_order": 20,
+      "class_count": 5,
+      "group_exponent": 20,
+      "directions": [
+        2,
+        4,
+        5
+      ],
+      "direction_count": 3,
+      "algebra_dimension": 17,
+      "ambient_endomorphism_dimension": 25,
+      "algebra_density": 0.68,
+      "center_dimension": 2,
+      "commutant_dimension": 2,
+      "double_commutant_dimension": 17,
+      "multiplicity_free": true,
+      "modular_receipts": [
+        {
+          "prime": 1000003,
+          "algebra_dimension": 17,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        },
+        {
+          "prime": 1000033,
+          "algebra_dimension": 17,
+          "center_dimension": 2,
+          "commutant_dimension": 2
+        }
+      ],
+      "rational_closure_certificate": {
+        "discovery_prime": 1000003,
+        "word_basis_size": 17,
+        "exact_word_basis_rank": 17,
+        "exact_basis_plus_generator_products_rank": 17,
+        "expected_dimension": 17,
+        "exact_center_dimension": 2,
+        "expected_center_dimension": 2,
+        "exact_commutant_dimension": 2,
+        "expected_commutant_dimension": 2,
+        "exact_over_Q": true
+      },
+      "complex_type_solution_count_capped": 1,
+      "complex_block_multiplicity_type": [
+        {
+          "matrix_size": 1,
+          "multiplicity": 1
+        },
+        {
+          "matrix_size": 4,
+          "multiplicity": 1
+        }
+      ],
+      "first_complex_type_possibilities": [
+        [
+          {
+            "matrix_size": 1,
+            "multiplicity": 1
+          },
+          {
+            "matrix_size": 4,
+            "multiplicity": 1
+          }
+        ]
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 4,
+        "spectral_gap_float": 1.0466770484409198,
+        "largest_eigenvalue_float": 25.448139146960177,
+        "trace_float": 33.0
+      },
+      "coherence_polymatroid": {
+        "full_rank": 4,
+        "nullity": 1,
+        "singleton_ranks": [
+          3,
+          3,
+          1
+        ],
+        "minimum_saturating_cardinality": 2,
+        "minimum_saturating_subset_count": 2,
+        "submodularity_exhaustively_checked": true,
+        "is_matroid_rank": false,
+        "rank_distribution": {
+          "0": 1,
+          "1": 1,
+          "3": 3,
+          "4": 3
+        },
+        "minimum_saturating_direction_sets": [
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "label": "Monster",
+      "family": "sporadic_simple_flagship",
+      "group_order": "808017424794512875886459904961710757005754368000000000",
+      "class_count": 194,
+      "direction_count": 22,
+      "directions": [
+        2,
+        4,
+        8,
+        16,
+        32,
+        3,
+        9,
+        27,
+        5,
+        25,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        41,
+        47,
+        59,
+        71
+      ],
+      "algebra_dimension": 28958,
+      "ambient_endomorphism_dimension": 37636,
+      "algebra_density": 0.7694228929748114,
+      "center_dimension": 15,
+      "commutant_dimension": 15,
+      "double_commutant_dimension": 28958,
+      "multiplicity_free": true,
+      "rational_wedderburn_block_sizes": [
+        170,
+        5,
+        3,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coherence_laplacian": {
+        "exact_nullity": 1,
+        "exact_rank": 193
+      },
+      "coherence_polymatroid": {
+        "full_rank": 193,
+        "minimum_saturating_cardinality": 15,
+        "minimum_saturating_subset_count": 30,
+        "submodularity_exact_from_linear_representation": true,
+        "is_matroid_rank": false
+      }
+    }
+  ],
+  "summary": {
+    "finite_group_count": 31,
+    "family_count": 9,
+    "multiplicity_free_groups": [
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C12",
+      "D8",
+      "D10",
+      "D12",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "PSL(2,7)",
+      "PSL(2,8)",
+      "PSL(2,11)",
+      "Frob20"
+    ],
+    "full_matrix_algebra_groups": [
+      "C2",
+      "S3",
+      "S4",
+      "S5",
+      "S7"
+    ],
+    "connected_coherence_groups": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C12",
+      "C2xC2",
+      "C2^3",
+      "C3xC3",
+      "D8",
+      "D10",
+      "D12",
+      "D16",
+      "Q8",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "PSL(2,7)",
+      "PSL(2,8)",
+      "PSL(2,11)",
+      "Heis27",
+      "Frob20"
+    ],
+    "matroid_rank_groups": [
+      "C2",
+      "S3"
+    ],
+    "largest_nonmonster_algebra": "S8",
+    "highest_nonmonster_density": "C2"
+  },
+  "claim_boundary": "For every non-Monster census row, the algebra dimension and closure, center dimension, and commutant dimension are certified over Q by exact FLINT rational ranks; the two good-prime computations are independent discovery and consistency receipts. Displayed block types describe the complexification and are reported only when the four exact dimension equations have a unique positive-integral solution. A rational division-algebra refinement requires separate central factorization; the Monster split-Q decomposition has its own exact certificate."
+}

@@ -1,0 +1,73 @@
+\section{Computational verification}
+\label{sec:certification}
+
+The computations use character-table data rather than matrix or permutation
+realizations.  GAP~\cite{GAP} and CTblLib~\cite{CTblLib} supply the ordered
+conjugacy classes, class sizes, exponents, and prime-power maps; GAP stores an
+\(n\)th power map as a list whose \(i\)th entry gives the class position of
+the \(n\)th powers of the elements of class \(i\)~\cite{GAPPowerMaps}.  For a
+table with \(k\) classes the runner builds \(P_n\) and
+\(D^{-1}P_n^{\mathsf T}D\) over \(\Q\), adjoins products until multiplication
+by every generator adds no new rational row, and obtains the center and
+represented commutant from rational commutator nullspaces; a separating
+central element and its factorization give the central idempotents, whose
+ideal dimensions give the split degrees over the center fields.  FLINT
+performs the rational rank calculations~\cite{FLINTRationalMatrices}.
+
+Reductions modulo \(1{,}000{,}003\) and \(1{,}000{,}033\) repeat every
+dimension calculation.  The proof of each stated decomposition is the rational
+word basis together with the central factorization; the modular runs are
+consistency checks.  The GAP exports, source, tests, and JSON outputs accompany this paper as
+ancillary files, together with a supplement recording the stopping criteria,
+schema, file hashes, and reproduction commands.
+
+The principal block of each sporadic algebra is certified as follows.  Since
+every element of \(G\) has order dividing \(N=\exp(G)\), the operator
+\(|G|^{-1}\Psi_N^*\Psi_N\) is the coordinate projection onto the identity
+class, so \(E_{1A}\in A\).  The cyclic module \(W=A\delta_{1A}\) is computed
+by exact rational orbit closure, and \cref{lem:cyclic-rank-one} gives
+\(A|_W=\End_\Q(W)\); the degree of the principal block is therefore
+\(\dim_\Q W\), replayed at two primes by nonzero orbit minors.  The residual
+algebra on the orthogonal complement of \(W\) is then closed and decomposed
+separately.  This replaces an earlier procedure that took the number of
+cells of the stable weighted refinement as the principal degree.  That
+partition is equitable, but equitability does not imply fullness, and for
+\(Fi_{23}\) it overcounts: the refinement has \(92\) cells while
+\(\dim_\Q A\delta_{1A}=91\), the missing dimension being the invariant
+line of \cref{sec:invisible-symmetries}.  The other twenty-five sporadic
+rows are unchanged by the corrected procedure.
+
+Independently of the word-basis ranks, every reported row is checked against
+the represented Wedderburn identities
+\[
+ \sum_jd_j^2=\dim A,\qquad
+ \sum_jm_j^2=\dim A',\qquad
+ \sum_jd_jm_j=k(G),\qquad
+ \sum_j[K_j:\Q]=\dim_\Q Z(A),
+\]
+where conjugate complex blocks are grouped over their rational center.
+These checks are especially restrictive in the largest rows.  For the
+Monster they give
+\[
+ 170+5+3+4\cdot2+8=194,\qquad
+ 170^2+5^2+3^2+4\cdot2^2+8=28{,}958,
+\]
+with fifteen multiplicity-one rational blocks.  For \(O'N\), the quadratic
+center contributes two dimensions to the center and the class count forces
+one scalar block of multiplicity two.  For \(\B\), the center and commutant
+dimensions force two multiplicity-two blocks.  Thus the tables are
+subject both to exact algebra closure and to the full set of representation
+identities, not only to modular rank agreement.
+
+The ramified local factors are computed by two routes.  The first forms the
+\(I_{p,m}\)-orbits and the induced Frobenius permutation; the second uses,
+for each rational-class stabilizer \(S\leq U_m\),
+\[
+ f=\operatorname{ord}_{U_m/SI_{p,m}}(\kappa_{p,m}),\qquad
+ g=[U_m:SI_{p,m}]/f,
+\]
+and the factor \((1-T^f)^g\).  The two routes agree in all \(173\)
+sporadic bad-prime slots.  The exported ramified maps generate the required
+\(U_m\)-action in \(168\) slots; the other five are omitted from the
+computed table.  Cyclic groups through order \(72\) and eight abelian
+groups give the cyclotomic local factors independently.
