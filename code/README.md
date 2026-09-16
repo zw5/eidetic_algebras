@@ -14,8 +14,8 @@ From the manuscript directory, using a Python environment with pip:
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install -r ancillary/requirements.txt
-.venv/bin/python ancillary/reproduce.py
+.venv/bin/python -m pip install -r code/requirements.txt
+.venv/bin/python code/reproduce.py
 ```
 
 The default command uses the included exact GAP exports. It regenerates the
@@ -29,14 +29,14 @@ To refresh the external inputs as well, install GAP 4.14.0 with CTblLib 1.3.9
 and its dependencies, then run:
 
 ```sh
-.venv/bin/python ancillary/reproduce.py --gap /absolute/path/to/gap
+.venv/bin/python code/reproduce.py --gap /absolute/path/to/gap
 ```
 
 A local optional bootstrap is provided:
 
 ```sh
-bash ancillary/bootstrap_gap.sh
-.venv/bin/python ancillary/reproduce.py --gap "$PWD/.tools/gap-4.14.0/gap"
+bash code/bootstrap_gap.sh
+.venv/bin/python code/reproduce.py --gap "$PWD/.tools/gap-4.14.0/gap"
 ```
 
 The bootstrap downloads upstream GAP/packages and builds GAP locally; it does
@@ -47,7 +47,7 @@ not install system-wide. The frozen exports identify GAP and CTblLib versions.
 Run just the tests:
 
 ```sh
-cd ancillary
+cd code
 ../.venv/bin/python -m pytest -q
 ```
 
@@ -65,8 +65,8 @@ cd ancillary
 | `investigate_fi23.py` | exact 91-dimensional orbit and explicit missing invariant vector |
 | `compare_paper.py` | `data/paper_comparison.json`: current printed dimensions versus computed dimensions |
 | `export_enriched.py`, `export_psl.g` | regenerate class names, weights, power maps, unit actions, stored table automorphisms |
-| `proof_construction_assembled/experiments/finite_group_adams_star_census_20260724/` | recovered general rational closure runner, exporter, tests and 31-group output |
-| `proof_construction_assembled/experiments/sporadic_adams_star_census_20260724/` | recovered residual closure/center factorization routines, extended to retain exact idempotents |
+| `runners/experiments/finite_group_adams_star_census_20260724/` | recovered general rational closure runner, exporter, tests and 31-group output |
+| `runners/experiments/sporadic_adams_star_census_20260724/` | recovered residual closure/center factorization routines, extended to retain exact idempotents |
 
 `data/census.json` is authoritative for the restored sporadic results. The
 older `.../sporadic_adams_star_census_20260724/output/sporadic_adams_star_census.json`

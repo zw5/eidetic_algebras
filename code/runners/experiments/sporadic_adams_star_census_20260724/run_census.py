@@ -25,7 +25,7 @@ from flint import fmpq, fmpq_mat
 import numpy as np
 import sympy as sp
 
-from proof_construction_assembled.experiments.finite_group_adams_star_census_20260724.run_census import (
+from runners.experiments.finite_group_adams_star_census_20260724.run_census import (
     MODULAR_PRIMES,
     adjoint_matrix,
     center_dimension,
@@ -220,7 +220,7 @@ def exact_closure_certificate(
 ) -> dict:
     """Lift a modular word basis and certify closure over Q."""
 
-    from proof_construction_assembled.experiments.finite_group_adams_star_census_20260724.run_census import (
+    from runners.experiments.finite_group_adams_star_census_20260724.run_census import (
         ModularBasis,
     )
 
@@ -282,7 +282,7 @@ def exact_word_basis(
     exact_generators: tuple[fmpq_mat, ...],
     modular_generators: tuple[np.ndarray, ...],
 ) -> list[fmpq_mat]:
-    from proof_construction_assembled.experiments.finite_group_adams_star_census_20260724.run_census import (
+    from runners.experiments.finite_group_adams_star_census_20260724.run_census import (
         ModularBasis,
     )
 

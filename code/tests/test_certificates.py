@@ -9,8 +9,8 @@ from eidetic import validate_input, replay_cyclic, generators, PRIMES, cycle_len
 from monster_certificate import certify
 from local_factors import group_factors,cyclic_row
 from characters import group_characters
-from proof_construction_assembled.experiments.finite_group_adams_star_census_20260724.run_census import analyze_group,exact_pullback_matrix,exact_adjoint_matrix
-from proof_construction_assembled.experiments.sporadic_adams_star_census_20260724.run_census import analyze_group as sporadic_analyze,exact_pullback,exact_adjoint
+from runners.experiments.finite_group_adams_star_census_20260724.run_census import analyze_group,exact_pullback_matrix,exact_adjoint_matrix
+from runners.experiments.sporadic_adams_star_census_20260724.run_census import analyze_group as sporadic_analyze,exact_pullback,exact_adjoint
 ROOT=Path(__file__).resolve().parents[1]
 def load(name):return json.loads((ROOT/'data'/name).read_text())
 TABLES={r['label']:r for r in load('sporadic_tables.json')['groups']}
@@ -60,7 +60,7 @@ def test_fi23_exact_counterexample_and_corrected_decomposition():
     with pytest.raises(ValueError):sporadic_analyze(row)
 
 def test_d8_q8_and_exact_weighted_transfer():
-    path=ROOT/'proof_construction_assembled/experiments/finite_group_adams_star_census_20260724/output/gap_groups.json'
+    path=ROOT/'runners/experiments/finite_group_adams_star_census_20260724/output/gap_groups.json'
     rows={r['label']:r for r in json.loads(path.read_text())['groups']}
     for name,expected in [('D8',17),('Q8',10)]:
         row=rows[name];r=analyze_group(row);assert r['algebra_dimension']==expected

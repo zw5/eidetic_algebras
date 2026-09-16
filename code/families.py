@@ -3,7 +3,7 @@ from math import gcd,lcm
 from pathlib import Path
 import json
 from sympy import factorint
-from proof_construction_assembled.experiments.finite_group_adams_star_census_20260724.run_census import analyze_group
+from runners.experiments.finite_group_adams_star_census_20260724.run_census import analyze_group
 ROOT=Path(__file__).resolve().parent
 
 def metacyclic_row(n,twist=0):

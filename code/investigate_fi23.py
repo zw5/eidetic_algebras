@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from flint import fmpq, fmpq_mat
 from eidetic import *
-from proof_construction_assembled.experiments.sporadic_adams_star_census_20260724.run_census import exact_pullback,exact_adjoint
+from runners.experiments.sporadic_adams_star_census_20260724.run_census import exact_pullback,exact_adjoint
 root=Path(__file__).resolve().parent
 r=next(x for x in json.loads((root/'data/sporadic_tables.json').read_text())['groups'] if x['label']=='Fi23')
 labels,h=stable_diagonal_partition(r['class_sizes'],r['power_maps']);cells=partition_cells(labels);reps=[x[0] for x in cells]

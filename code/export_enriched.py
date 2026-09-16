@@ -3,7 +3,7 @@ import argparse,json,subprocess
 from pathlib import Path
 from symmetry_helpers import _global_unit_generators
 ROOT=Path(__file__).resolve().parent
-BASE=ROOT/'proof_construction_assembled/experiments/sporadic_adams_star_census_20260724'
+BASE=ROOT/'runners/experiments/sporadic_adams_star_census_20260724'
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--gap',required=True);args=ap.parse_args()
     source=json.loads((BASE/'output/sporadic_power_maps.json').read_text())

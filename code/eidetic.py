@@ -10,8 +10,8 @@ from math import gcd
 import numpy as np
 from flint import nmod_mat
 from sympy import factorint
-from proof_construction_assembled.experiments.finite_group_adams_star_census_20260724.run_census import ModularBasis
-from proof_construction_assembled.experiments.sporadic_adams_star_census_20260724.run_census import stable_diagonal_partition, partition_cells
+from runners.experiments.finite_group_adams_star_census_20260724.run_census import ModularBasis
+from runners.experiments.sporadic_adams_star_census_20260724.run_census import stable_diagonal_partition, partition_cells
 
 PRIMES = (1000003, 1000033)
 

@@ -4,7 +4,7 @@ import json
 from math import gcd
 from pathlib import Path
 
-from proof_construction_assembled.experiments.finite_group_adams_star_census_20260724.run_census import (
+from runners.experiments.finite_group_adams_star_census_20260724.run_census import (
     DEFAULT_OUTPUT,
     analyze_group,
     complex_type_solutions,

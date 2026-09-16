@@ -21,6 +21,6 @@ __pycache__/
 __pycache__/
 .DS_Store
 # forensic recovery material, not needed for reproduction
-ancillary/recovery/
-ancillary/RECOVERY_PROVENANCE.md
+code/recovery/
+code/RECOVERY_PROVENANCE.md
 eidetic_computational_supplement_20260916.zip

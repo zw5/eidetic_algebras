@@ -5,7 +5,7 @@ import json
 from flint import fmpq,fmpq_mat
 from sympy import factorint,kronecker_symbol
 from symmetry_helpers import _local_unit_generators
-from proof_construction_assembled.experiments.sporadic_adams_star_census_20260724.run_census import residual_basis,stable_diagonal_partition,partition_cells,exact_pullback
+from runners.experiments.sporadic_adams_star_census_20260724.run_census import residual_basis,stable_diagonal_partition,partition_cells,exact_pullback
 ROOT=Path(__file__).resolve().parent
 
 def matrix(rows):return fmpq_mat([[fmpq(x) for x in r] for r in rows])

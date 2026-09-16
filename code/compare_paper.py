@@ -4,7 +4,7 @@ import json,re
 ROOT=Path(__file__).resolve().parent
 
 def main():
-    source=ROOT.parent/'sections/sporadic.tex'
+    source=ROOT.parent/'paper/sections/sporadic.tex'
     if not source.exists():
         print('Manuscript source absent; frozen comparison report retained.');return
     expected=[tuple(map(int,m)) for m in re.findall(r'& (\d+) & (\d+) & (\d+) & (\d+) &',source.read_text())]

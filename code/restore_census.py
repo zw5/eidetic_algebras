@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 from eidetic import principal_certificate
-from proof_construction_assembled.experiments.sporadic_adams_star_census_20260724.run_census import analyze_group
+from runners.experiments.sporadic_adams_star_census_20260724.run_census import analyze_group
 ROOT=Path(__file__).resolve().parent
 
 def main():
